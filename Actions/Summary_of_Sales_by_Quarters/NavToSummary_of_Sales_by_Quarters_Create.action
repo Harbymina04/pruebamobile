@@ -1,0 +1,6 @@
+{
+	"ModalPageFullscreen": false,
+	"ModalPage": true,
+	"PageToOpen": "/prueba/Pages/Summary_of_Sales_by_Quarters/Summary_of_Sales_by_Quarters_Create.page",
+	"_Type": "Action.Type.Navigation"
+}

@@ -1,0 +1,43 @@
+{
+	"Caption": "Update Shipper",
+	"ActionBar": {
+		"Items": [{
+			"Position": "left",
+			"SystemItem": "Cancel",
+			"OnPress": "/prueba/Actions/CloseModalPage_Cancel.action"
+		}, {
+			"Position": "right",
+			"SystemItem": "Save",
+			"OnPress": "/prueba/Actions/Shippers/Shippers_UpdateEntity.action"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Caption": "",
+			"Controls": [
+	{
+		"Caption": "ShipperID",
+		"_Name": "ShipperID",
+		"Value": "{ShipperID}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "CompanyName",
+		"_Name": "CompanyName",
+		"Value": "{CompanyName}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Phone",
+		"_Name": "Phone",
+		"Value": "{Phone}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	}
+]
+		}],
+		"_Name": "PageOneFormCell",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "Shippers_Edit"
+}

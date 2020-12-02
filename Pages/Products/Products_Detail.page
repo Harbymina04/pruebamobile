@@ -1,0 +1,86 @@
+{
+	"Caption": "Products Details",
+
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/Products/NavToProducts_Edit.action",
+			"Position": "right",
+			"SystemItem": "Edit"
+		}, {
+			"OnPress": "/prueba/Rules/Products/Products_DeleteConfirmation.js",
+			"Position": "right",
+			"SystemItem": "Trash"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"ObjectHeader": {
+				"DetailImage": "",
+				"HeadlineText": "{ProductID}",
+				"Subhead": "{SupplierID}",
+				"Tags": [],
+				"BodyText": "",
+				"Footnote": "{CategoryID}",
+				"Description": "{ProductName}",
+				"StatusText": "{QuantityPerUnit}",
+				"StatusImage": "",
+				"SubstatusImage": "",
+				"SubstatusText": "{UnitPrice}"
+			},
+			"_Type": "Section.Type.ObjectHeader"
+		}, {
+			"KeyAndValues": [
+	{
+		"KeyName": "ProductID",
+		"Value": "{ProductID}"
+	},
+	{
+		"KeyName": "ProductName",
+		"Value": "{ProductName}"
+	},
+	{
+		"KeyName": "SupplierID",
+		"Value": "{SupplierID}"
+	},
+	{
+		"KeyName": "CategoryID",
+		"Value": "{CategoryID}"
+	},
+	{
+		"KeyName": "QuantityPerUnit",
+		"Value": "{QuantityPerUnit}"
+	},
+	{
+		"KeyName": "UnitPrice",
+		"Value": "{UnitPrice}"
+	},
+	{
+		"KeyName": "UnitsInStock",
+		"Value": "{UnitsInStock}"
+	},
+	{
+		"KeyName": "UnitsOnOrder",
+		"Value": "{UnitsOnOrder}"
+	},
+	{
+		"KeyName": "ReorderLevel",
+		"Value": "{ReorderLevel}"
+	},
+	{
+		"KeyName": "Discontinued",
+		"Value": "{Discontinued}"
+	}
+],
+			"Layout": {
+				"NumberOfColumns": 2
+			},
+			"MaxItemCount": 1,
+			"_Name": "SectionKeyValue0",
+			"_Type": "Section.Type.KeyValue"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Products_Detail"
+}

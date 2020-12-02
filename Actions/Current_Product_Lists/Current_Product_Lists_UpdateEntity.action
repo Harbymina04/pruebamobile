@@ -1,0 +1,18 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"Target": {
+		"EntitySet": "Current_Product_Lists",
+		"Service": "/prueba/Services/prueba.service",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"Properties":  {
+	"ProductID": "#Control:ProductID/#Value",
+	"ProductName": "#Control:ProductName/#Value"
+},
+	"UpdateLinks": [],
+	"ActionResult": {
+		"_Name": "update"
+	},
+	"OnSuccess": "/prueba/Actions/UpdateEntitySuccessMessage.action",
+	"OnFailure": "/prueba/Actions/UpdateEntityFailureMessage.action"
+}

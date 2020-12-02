@@ -1,0 +1,50 @@
+{
+	"Caption": "Territories",
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/Territories/NavToTerritories_Create.action",
+			"Position": "right",
+			"SystemItem": "Add"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Header": {
+
+				"UseTopPadding": false
+			},
+			"ObjectCell": {
+				"AccessoryType": "disclosureIndicator",
+				"Description": "{TerritoryDescription}",
+				"DetailImage": "",
+				"DetailImageIsCircular": false,
+				"Icons": [],
+				"OnPress": "/prueba/Actions/Territories/NavToTerritories_Detail.action",
+				"StatusImage": "",
+				"Title": "{TerritoryID}",
+				"Footnote": "",
+				"PreserveIconStackSpacing": false,
+				"StatusText": "",
+				"Subhead": "{RegionID}",
+				"SubstatusText": ""
+			},
+			"Search": {
+				"Enabled": true,
+				"Placeholder": "Item Search",
+				"BarcodeScanner": true,
+				"Delay": 500,
+				"MinimumCharacterThreshold": 3
+			},
+			"Target": {
+				"EntitySet": "Territories",
+				"Service": "/prueba/Services/prueba.service",
+				"QueryOptions": ""
+			},
+			"_Type": "Section.Type.ObjectTable"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Territories_List"
+}

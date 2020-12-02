@@ -1,0 +1,49 @@
+{
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/CloseModalPage_Cancel.action",
+			"Position": "left",
+			"SystemItem": "Cancel"
+		}, {
+			"OnPress": "/prueba/Actions/Products_by_Categories/Products_by_Categories_CreateEntity.action",
+			"Position": "right",
+			"SystemItem": "Save"
+		}]
+	},
+	"Caption": "Create Products_by_Category",
+	"Controls": [{
+		"Sections": [{
+			"Controls": [
+	{
+		"Caption": "CategoryName",
+		"_Name": "CategoryName",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ProductName",
+		"_Name": "ProductName",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "QuantityPerUnit",
+		"_Name": "QuantityPerUnit",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "UnitsInStock",
+		"_Name": "UnitsInStock",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"_Name": "Discontinued",
+		"Caption": "Discontinued",
+		"_Type": "Control.Type.FormCell.Switch"
+	}
+]
+		}],
+		"_Name": "FormCellContainer",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "Products_by_Categories_Create"
+}

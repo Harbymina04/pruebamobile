@@ -1,0 +1,62 @@
+{
+	"Caption": "Categories Details",
+
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/Categories/NavToCategories_Edit.action",
+			"Position": "right",
+			"SystemItem": "Edit"
+		}, {
+			"OnPress": "/prueba/Rules/Categories/Categories_DeleteConfirmation.js",
+			"Position": "right",
+			"SystemItem": "Trash"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"ObjectHeader": {
+				"DetailImage": "",
+				"HeadlineText": "{CategoryID}",
+				"Subhead": "{Description}",
+				"Tags": [],
+				"BodyText": "",
+				"Footnote": "{Picture}",
+				"Description": "{CategoryName}",
+				"StatusText": "",
+				"StatusImage": "",
+				"SubstatusImage": "",
+				"SubstatusText": ""
+			},
+			"_Type": "Section.Type.ObjectHeader"
+		}, {
+			"KeyAndValues": [
+	{
+		"KeyName": "CategoryID",
+		"Value": "{CategoryID}"
+	},
+	{
+		"KeyName": "CategoryName",
+		"Value": "{CategoryName}"
+	},
+	{
+		"KeyName": "Description",
+		"Value": "{Description}"
+	},
+	{
+		"KeyName": "Picture",
+		"Value": "{Picture}"
+	}
+],
+			"Layout": {
+				"NumberOfColumns": 2
+			},
+			"MaxItemCount": 1,
+			"_Name": "SectionKeyValue0",
+			"_Type": "Section.Type.KeyValue"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Categories_Detail"
+}

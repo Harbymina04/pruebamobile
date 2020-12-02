@@ -1,0 +1,17 @@
+{
+	"CreateLinks": [],
+	"OnFailure": "/prueba/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/prueba/Actions/CreateEntitySuccessMessage.action",
+	"Properties": {
+	"CustomerTypeID": "#Control:CustomerTypeID/#Value",
+	"CustomerDesc": "#Control:CustomerDesc/#Value"
+},
+	"Target": {
+		"EntitySet": "CustomerDemographics",
+		"Service": "/prueba/Services/prueba.service"
+	},
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"_Type": "Action.Type.ODataService.CreateEntity"
+}

@@ -1,0 +1,9 @@
+{
+    "AppId": "com.sap.mk.demo",
+    "DestinationName": "com.sap.mk.demo",
+    "OfflineEnabled": true,
+    "LanguageURLParam": "sap-language",
+    "OnlineOptions": {},
+    "PathSuffix": "",
+    "SourceType": "Mobile"
+}

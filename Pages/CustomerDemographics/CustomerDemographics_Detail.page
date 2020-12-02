@@ -1,0 +1,54 @@
+{
+	"Caption": "CustomerDemographics Details",
+
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/CustomerDemographics/NavToCustomerDemographics_Edit.action",
+			"Position": "right",
+			"SystemItem": "Edit"
+		}, {
+			"OnPress": "/prueba/Rules/CustomerDemographics/CustomerDemographics_DeleteConfirmation.js",
+			"Position": "right",
+			"SystemItem": "Trash"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"ObjectHeader": {
+				"DetailImage": "",
+				"HeadlineText": "{CustomerTypeID}",
+				"Subhead": "",
+				"Tags": [],
+				"BodyText": "",
+				"Footnote": "",
+				"Description": "{CustomerDesc}",
+				"StatusText": "",
+				"StatusImage": "",
+				"SubstatusImage": "",
+				"SubstatusText": ""
+			},
+			"_Type": "Section.Type.ObjectHeader"
+		}, {
+			"KeyAndValues": [
+	{
+		"KeyName": "CustomerTypeID",
+		"Value": "{CustomerTypeID}"
+	},
+	{
+		"KeyName": "CustomerDesc",
+		"Value": "{CustomerDesc}"
+	}
+],
+			"Layout": {
+				"NumberOfColumns": 2
+			},
+			"MaxItemCount": 1,
+			"_Name": "SectionKeyValue0",
+			"_Type": "Section.Type.KeyValue"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "CustomerDemographics_Detail"
+}

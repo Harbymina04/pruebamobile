@@ -1,0 +1,13 @@
+{
+	"Target": {
+		"EntitySet": "Employees",
+		"Service": "/prueba/Services/prueba.service",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"OnSuccess": "/prueba/Actions/DeleteEntitySuccessMessage.action",
+	"OnFailure": "/prueba/Actions/DeleteEntityFailureMessage.action",
+	"ActionResult": {
+		"_Name": "delete"
+	},
+	"_Type": "Action.Type.ODataService.DeleteEntity"
+}

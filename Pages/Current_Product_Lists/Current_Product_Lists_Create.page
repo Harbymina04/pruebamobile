@@ -1,0 +1,34 @@
+{
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/CloseModalPage_Cancel.action",
+			"Position": "left",
+			"SystemItem": "Cancel"
+		}, {
+			"OnPress": "/prueba/Actions/Current_Product_Lists/Current_Product_Lists_CreateEntity.action",
+			"Position": "right",
+			"SystemItem": "Save"
+		}]
+	},
+	"Caption": "Create Current_Product_List",
+	"Controls": [{
+		"Sections": [{
+			"Controls": [
+	{
+		"Caption": "ProductID",
+		"_Name": "ProductID",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ProductName",
+		"_Name": "ProductName",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	}
+]
+		}],
+		"_Name": "FormCellContainer",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "Current_Product_Lists_Create"
+}

@@ -1,0 +1,20 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"Target": {
+		"EntitySet": "Sales_Totals_by_Amounts",
+		"Service": "/prueba/Services/prueba.service",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"Properties":  {
+	"SaleAmount": "#Control:SaleAmount/#Value",
+	"OrderID": "#Control:OrderID/#Value",
+	"CompanyName": "#Control:CompanyName/#Value",
+	"ShippedDate": "#Control:ShippedDate/#Value"
+},
+	"UpdateLinks": [],
+	"ActionResult": {
+		"_Name": "update"
+	},
+	"OnSuccess": "/prueba/Actions/UpdateEntitySuccessMessage.action",
+	"OnFailure": "/prueba/Actions/UpdateEntityFailureMessage.action"
+}

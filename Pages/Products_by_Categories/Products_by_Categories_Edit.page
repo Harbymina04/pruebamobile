@@ -1,0 +1,55 @@
+{
+	"Caption": "Update Products_by_Category",
+	"ActionBar": {
+		"Items": [{
+			"Position": "left",
+			"SystemItem": "Cancel",
+			"OnPress": "/prueba/Actions/CloseModalPage_Cancel.action"
+		}, {
+			"Position": "right",
+			"SystemItem": "Save",
+			"OnPress": "/prueba/Actions/Products_by_Categories/Products_by_Categories_UpdateEntity.action"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Caption": "",
+			"Controls": [
+	{
+		"Caption": "CategoryName",
+		"_Name": "CategoryName",
+		"Value": "{CategoryName}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ProductName",
+		"_Name": "ProductName",
+		"Value": "{ProductName}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "QuantityPerUnit",
+		"_Name": "QuantityPerUnit",
+		"Value": "{QuantityPerUnit}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "UnitsInStock",
+		"_Name": "UnitsInStock",
+		"Value": "{UnitsInStock}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"_Name": "Discontinued",
+		"Caption": "Discontinued",
+		"Value": "{Discontinued}",
+		"_Type": "Control.Type.FormCell.Switch"
+	}
+]
+		}],
+		"_Name": "PageOneFormCell",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "Products_by_Categories_Edit"
+}

@@ -1,0 +1,50 @@
+{
+	"Caption": "Sales_by_Categories",
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/Sales_by_Categories/NavToSales_by_Categories_Create.action",
+			"Position": "right",
+			"SystemItem": "Add"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Header": {
+
+				"UseTopPadding": false
+			},
+			"ObjectCell": {
+				"AccessoryType": "disclosureIndicator",
+				"Description": "{CategoryName}",
+				"DetailImage": "",
+				"DetailImageIsCircular": false,
+				"Icons": [],
+				"OnPress": "/prueba/Actions/Sales_by_Categories/NavToSales_by_Categories_Detail.action",
+				"StatusImage": "",
+				"Title": "{CategoryID}",
+				"Footnote": "{ProductSales}",
+				"PreserveIconStackSpacing": false,
+				"StatusText": "",
+				"Subhead": "{ProductName}",
+				"SubstatusText": ""
+			},
+			"Search": {
+				"Enabled": true,
+				"Placeholder": "Item Search",
+				"BarcodeScanner": true,
+				"Delay": 500,
+				"MinimumCharacterThreshold": 3
+			},
+			"Target": {
+				"EntitySet": "Sales_by_Categories",
+				"Service": "/prueba/Services/prueba.service",
+				"QueryOptions": ""
+			},
+			"_Type": "Section.Type.ObjectTable"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Sales_by_Categories_List"
+}

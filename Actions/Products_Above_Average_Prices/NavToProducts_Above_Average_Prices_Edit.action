@@ -1,0 +1,6 @@
+{
+	"ModalPageFullscreen": false,
+	"ModalPage": true,
+	"PageToOpen": "/prueba/Pages/Products_Above_Average_Prices/Products_Above_Average_Prices_Edit.page",
+	"_Type": "Action.Type.Navigation"
+}

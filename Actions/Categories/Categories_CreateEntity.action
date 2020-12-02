@@ -1,0 +1,19 @@
+{
+	"CreateLinks": [],
+	"OnFailure": "/prueba/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/prueba/Actions/CreateEntitySuccessMessage.action",
+	"Properties": {
+	"CategoryID": "#Control:CategoryID/#Value",
+	"CategoryName": "#Control:CategoryName/#Value",
+	"Description": "#Control:Description/#Value",
+	"Picture": "#Control:Picture/#Value"
+},
+	"Target": {
+		"EntitySet": "Categories",
+		"Service": "/prueba/Services/prueba.service"
+	},
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"_Type": "Action.Type.ODataService.CreateEntity"
+}

@@ -1,0 +1,102 @@
+{
+	"Caption": "Orders Details",
+
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/Orders/NavToOrders_Edit.action",
+			"Position": "right",
+			"SystemItem": "Edit"
+		}, {
+			"OnPress": "/prueba/Rules/Orders/Orders_DeleteConfirmation.js",
+			"Position": "right",
+			"SystemItem": "Trash"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"ObjectHeader": {
+				"DetailImage": "",
+				"HeadlineText": "{OrderID}",
+				"Subhead": "{EmployeeID}",
+				"Tags": [],
+				"BodyText": "",
+				"Footnote": "{OrderDate}",
+				"Description": "{CustomerID}",
+				"StatusText": "{RequiredDate}",
+				"StatusImage": "",
+				"SubstatusImage": "",
+				"SubstatusText": "{ShippedDate}"
+			},
+			"_Type": "Section.Type.ObjectHeader"
+		}, {
+			"KeyAndValues": [
+	{
+		"KeyName": "OrderID",
+		"Value": "{OrderID}"
+	},
+	{
+		"KeyName": "CustomerID",
+		"Value": "{CustomerID}"
+	},
+	{
+		"KeyName": "EmployeeID",
+		"Value": "{EmployeeID}"
+	},
+	{
+		"KeyName": "OrderDate",
+		"Value": "{OrderDate}"
+	},
+	{
+		"KeyName": "RequiredDate",
+		"Value": "{RequiredDate}"
+	},
+	{
+		"KeyName": "ShippedDate",
+		"Value": "{ShippedDate}"
+	},
+	{
+		"KeyName": "ShipVia",
+		"Value": "{ShipVia}"
+	},
+	{
+		"KeyName": "Freight",
+		"Value": "{Freight}"
+	},
+	{
+		"KeyName": "ShipName",
+		"Value": "{ShipName}"
+	},
+	{
+		"KeyName": "ShipAddress",
+		"Value": "{ShipAddress}"
+	},
+	{
+		"KeyName": "ShipCity",
+		"Value": "{ShipCity}"
+	},
+	{
+		"KeyName": "ShipRegion",
+		"Value": "{ShipRegion}"
+	},
+	{
+		"KeyName": "ShipPostalCode",
+		"Value": "{ShipPostalCode}"
+	},
+	{
+		"KeyName": "ShipCountry",
+		"Value": "{ShipCountry}"
+	}
+],
+			"Layout": {
+				"NumberOfColumns": 2
+			},
+			"MaxItemCount": 1,
+			"_Name": "SectionKeyValue0",
+			"_Type": "Section.Type.KeyValue"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Orders_Detail"
+}

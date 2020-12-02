@@ -1,0 +1,34 @@
+{
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/CloseModalPage_Cancel.action",
+			"Position": "left",
+			"SystemItem": "Cancel"
+		}, {
+			"OnPress": "/prueba/Actions/Regions/Regions_CreateEntity.action",
+			"Position": "right",
+			"SystemItem": "Save"
+		}]
+	},
+	"Caption": "Create Region",
+	"Controls": [{
+		"Sections": [{
+			"Controls": [
+	{
+		"Caption": "RegionID",
+		"_Name": "RegionID",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "RegionDescription",
+		"_Name": "RegionDescription",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	}
+]
+		}],
+		"_Name": "FormCellContainer",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "Regions_Create"
+}

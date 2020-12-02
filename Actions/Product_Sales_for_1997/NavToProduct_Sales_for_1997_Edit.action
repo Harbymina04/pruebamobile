@@ -1,0 +1,6 @@
+{
+	"ModalPageFullscreen": false,
+	"ModalPage": true,
+	"PageToOpen": "/prueba/Pages/Product_Sales_for_1997/Product_Sales_for_1997_Edit.page",
+	"_Type": "Action.Type.Navigation"
+}

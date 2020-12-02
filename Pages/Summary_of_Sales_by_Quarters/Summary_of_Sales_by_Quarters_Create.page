@@ -1,0 +1,40 @@
+{
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/CloseModalPage_Cancel.action",
+			"Position": "left",
+			"SystemItem": "Cancel"
+		}, {
+			"OnPress": "/prueba/Actions/Summary_of_Sales_by_Quarters/Summary_of_Sales_by_Quarters_CreateEntity.action",
+			"Position": "right",
+			"SystemItem": "Save"
+		}]
+	},
+	"Caption": "Create Summary_of_Sales_by_Quarter",
+	"Controls": [{
+		"Sections": [{
+			"Controls": [
+	{
+		"Mode": "Date",
+		"_Name": "ShippedDate",
+		"Caption": "ShippedDate",
+		"_Type": "Control.Type.FormCell.DatePicker"
+	},
+	{
+		"Caption": "OrderID",
+		"_Name": "OrderID",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Subtotal",
+		"_Name": "Subtotal",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	}
+]
+		}],
+		"_Name": "FormCellContainer",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "Summary_of_Sales_by_Quarters_Create"
+}

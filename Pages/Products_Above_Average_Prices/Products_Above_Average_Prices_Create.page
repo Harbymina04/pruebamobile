@@ -1,0 +1,34 @@
+{
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/CloseModalPage_Cancel.action",
+			"Position": "left",
+			"SystemItem": "Cancel"
+		}, {
+			"OnPress": "/prueba/Actions/Products_Above_Average_Prices/Products_Above_Average_Prices_CreateEntity.action",
+			"Position": "right",
+			"SystemItem": "Save"
+		}]
+	},
+	"Caption": "Create Products_Above_Average_Price",
+	"Controls": [{
+		"Sections": [{
+			"Controls": [
+	{
+		"Caption": "ProductName",
+		"_Name": "ProductName",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "UnitPrice",
+		"_Name": "UnitPrice",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	}
+]
+		}],
+		"_Name": "FormCellContainer",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "Products_Above_Average_Prices_Create"
+}

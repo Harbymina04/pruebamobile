@@ -1,0 +1,62 @@
+{
+	"Caption": "Sales_Totals_by_Amounts Details",
+
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/Sales_Totals_by_Amounts/NavToSales_Totals_by_Amounts_Edit.action",
+			"Position": "right",
+			"SystemItem": "Edit"
+		}, {
+			"OnPress": "/prueba/Rules/Sales_Totals_by_Amounts/Sales_Totals_by_Amounts_DeleteConfirmation.js",
+			"Position": "right",
+			"SystemItem": "Trash"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"ObjectHeader": {
+				"DetailImage": "",
+				"HeadlineText": "{SaleAmount}",
+				"Subhead": "{CompanyName}",
+				"Tags": [],
+				"BodyText": "",
+				"Footnote": "{ShippedDate}",
+				"Description": "{OrderID}",
+				"StatusText": "",
+				"StatusImage": "",
+				"SubstatusImage": "",
+				"SubstatusText": ""
+			},
+			"_Type": "Section.Type.ObjectHeader"
+		}, {
+			"KeyAndValues": [
+	{
+		"KeyName": "SaleAmount",
+		"Value": "{SaleAmount}"
+	},
+	{
+		"KeyName": "OrderID",
+		"Value": "{OrderID}"
+	},
+	{
+		"KeyName": "CompanyName",
+		"Value": "{CompanyName}"
+	},
+	{
+		"KeyName": "ShippedDate",
+		"Value": "{ShippedDate}"
+	}
+],
+			"Layout": {
+				"NumberOfColumns": 2
+			},
+			"MaxItemCount": 1,
+			"_Name": "SectionKeyValue0",
+			"_Type": "Section.Type.KeyValue"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Sales_Totals_by_Amounts_Detail"
+}

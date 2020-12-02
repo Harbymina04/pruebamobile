@@ -1,0 +1,19 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"Target": {
+		"EntitySet": "Shippers",
+		"Service": "/prueba/Services/prueba.service",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"Properties":  {
+	"ShipperID": "#Control:ShipperID/#Value",
+	"CompanyName": "#Control:CompanyName/#Value",
+	"Phone": "#Control:Phone/#Value"
+},
+	"UpdateLinks": [],
+	"ActionResult": {
+		"_Name": "update"
+	},
+	"OnSuccess": "/prueba/Actions/UpdateEntitySuccessMessage.action",
+	"OnFailure": "/prueba/Actions/UpdateEntityFailureMessage.action"
+}

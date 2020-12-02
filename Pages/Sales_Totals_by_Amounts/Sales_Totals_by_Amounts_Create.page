@@ -1,0 +1,45 @@
+{
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/CloseModalPage_Cancel.action",
+			"Position": "left",
+			"SystemItem": "Cancel"
+		}, {
+			"OnPress": "/prueba/Actions/Sales_Totals_by_Amounts/Sales_Totals_by_Amounts_CreateEntity.action",
+			"Position": "right",
+			"SystemItem": "Save"
+		}]
+	},
+	"Caption": "Create Sales_Totals_by_Amount",
+	"Controls": [{
+		"Sections": [{
+			"Controls": [
+	{
+		"Caption": "SaleAmount",
+		"_Name": "SaleAmount",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "OrderID",
+		"_Name": "OrderID",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "CompanyName",
+		"_Name": "CompanyName",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Mode": "Date",
+		"_Name": "ShippedDate",
+		"Caption": "ShippedDate",
+		"_Type": "Control.Type.FormCell.DatePicker"
+	}
+]
+		}],
+		"_Name": "FormCellContainer",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "Sales_Totals_by_Amounts_Create"
+}

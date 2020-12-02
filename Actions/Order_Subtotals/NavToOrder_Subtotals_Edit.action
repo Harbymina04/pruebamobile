@@ -1,0 +1,6 @@
+{
+	"ModalPageFullscreen": false,
+	"ModalPage": true,
+	"PageToOpen": "/prueba/Pages/Order_Subtotals/Order_Subtotals_Edit.page",
+	"_Type": "Action.Type.Navigation"
+}

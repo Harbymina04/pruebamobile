@@ -1,0 +1,50 @@
+{
+	"Caption": "Summary_of_Sales_by_Years",
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/Summary_of_Sales_by_Years/NavToSummary_of_Sales_by_Years_Create.action",
+			"Position": "right",
+			"SystemItem": "Add"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Header": {
+
+				"UseTopPadding": false
+			},
+			"ObjectCell": {
+				"AccessoryType": "disclosureIndicator",
+				"Description": "{OrderID}",
+				"DetailImage": "",
+				"DetailImageIsCircular": false,
+				"Icons": [],
+				"OnPress": "/prueba/Actions/Summary_of_Sales_by_Years/NavToSummary_of_Sales_by_Years_Detail.action",
+				"StatusImage": "",
+				"Title": "{ShippedDate}",
+				"Footnote": "",
+				"PreserveIconStackSpacing": false,
+				"StatusText": "",
+				"Subhead": "{Subtotal}",
+				"SubstatusText": ""
+			},
+			"Search": {
+				"Enabled": true,
+				"Placeholder": "Item Search",
+				"BarcodeScanner": true,
+				"Delay": 500,
+				"MinimumCharacterThreshold": 3
+			},
+			"Target": {
+				"EntitySet": "Summary_of_Sales_by_Years",
+				"Service": "/prueba/Services/prueba.service",
+				"QueryOptions": ""
+			},
+			"_Type": "Section.Type.ObjectTable"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Summary_of_Sales_by_Years_List"
+}

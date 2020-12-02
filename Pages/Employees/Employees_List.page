@@ -1,0 +1,50 @@
+{
+	"Caption": "Employees",
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/Employees/NavToEmployees_Create.action",
+			"Position": "right",
+			"SystemItem": "Add"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Header": {
+
+				"UseTopPadding": false
+			},
+			"ObjectCell": {
+				"AccessoryType": "disclosureIndicator",
+				"Description": "{LastName}",
+				"DetailImage": "",
+				"DetailImageIsCircular": false,
+				"Icons": [],
+				"OnPress": "/prueba/Actions/Employees/NavToEmployees_Detail.action",
+				"StatusImage": "",
+				"Title": "{EmployeeID}",
+				"Footnote": "{Title}",
+				"PreserveIconStackSpacing": false,
+				"StatusText": "{TitleOfCourtesy}",
+				"Subhead": "{FirstName}",
+				"SubstatusText": "{BirthDate}"
+			},
+			"Search": {
+				"Enabled": true,
+				"Placeholder": "Item Search",
+				"BarcodeScanner": true,
+				"Delay": 500,
+				"MinimumCharacterThreshold": 3
+			},
+			"Target": {
+				"EntitySet": "Employees",
+				"Service": "/prueba/Services/prueba.service",
+				"QueryOptions": ""
+			},
+			"_Type": "Section.Type.ObjectTable"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Employees_List"
+}

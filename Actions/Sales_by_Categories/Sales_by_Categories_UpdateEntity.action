@@ -1,0 +1,20 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"Target": {
+		"EntitySet": "Sales_by_Categories",
+		"Service": "/prueba/Services/prueba.service",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"Properties":  {
+	"CategoryID": "#Control:CategoryID/#Value",
+	"CategoryName": "#Control:CategoryName/#Value",
+	"ProductName": "#Control:ProductName/#Value",
+	"ProductSales": "#Control:ProductSales/#Value"
+},
+	"UpdateLinks": [],
+	"ActionResult": {
+		"_Name": "update"
+	},
+	"OnSuccess": "/prueba/Actions/UpdateEntitySuccessMessage.action",
+	"OnFailure": "/prueba/Actions/UpdateEntityFailureMessage.action"
+}

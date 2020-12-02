@@ -1,0 +1,37 @@
+{
+	"Caption": "Update CustomerDemographic",
+	"ActionBar": {
+		"Items": [{
+			"Position": "left",
+			"SystemItem": "Cancel",
+			"OnPress": "/prueba/Actions/CloseModalPage_Cancel.action"
+		}, {
+			"Position": "right",
+			"SystemItem": "Save",
+			"OnPress": "/prueba/Actions/CustomerDemographics/CustomerDemographics_UpdateEntity.action"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Caption": "",
+			"Controls": [
+	{
+		"Caption": "CustomerTypeID",
+		"_Name": "CustomerTypeID",
+		"Value": "{CustomerTypeID}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "CustomerDesc",
+		"_Name": "CustomerDesc",
+		"Value": "{CustomerDesc}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	}
+]
+		}],
+		"_Name": "PageOneFormCell",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "CustomerDemographics_Edit"
+}

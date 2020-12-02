@@ -1,0 +1,34 @@
+{
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/CloseModalPage_Cancel.action",
+			"Position": "left",
+			"SystemItem": "Cancel"
+		}, {
+			"OnPress": "/prueba/Actions/CustomerDemographics/CustomerDemographics_CreateEntity.action",
+			"Position": "right",
+			"SystemItem": "Save"
+		}]
+	},
+	"Caption": "Create CustomerDemographic",
+	"Controls": [{
+		"Sections": [{
+			"Controls": [
+	{
+		"Caption": "CustomerTypeID",
+		"_Name": "CustomerTypeID",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "CustomerDesc",
+		"_Name": "CustomerDesc",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	}
+]
+		}],
+		"_Name": "FormCellContainer",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "CustomerDemographics_Create"
+}

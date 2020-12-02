@@ -1,0 +1,33 @@
+{
+	"CreateLinks": [],
+	"OnFailure": "/prueba/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/prueba/Actions/CreateEntitySuccessMessage.action",
+	"Properties": {
+	"EmployeeID": "#Control:EmployeeID/#Value",
+	"LastName": "#Control:LastName/#Value",
+	"FirstName": "#Control:FirstName/#Value",
+	"Title": "#Control:Title/#Value",
+	"TitleOfCourtesy": "#Control:TitleOfCourtesy/#Value",
+	"BirthDate": "#Control:BirthDate/#Value",
+	"HireDate": "#Control:HireDate/#Value",
+	"Address": "#Control:Address/#Value",
+	"City": "#Control:City/#Value",
+	"Region": "#Control:Region/#Value",
+	"PostalCode": "#Control:PostalCode/#Value",
+	"Country": "#Control:Country/#Value",
+	"HomePhone": "#Control:HomePhone/#Value",
+	"Extension": "#Control:Extension/#Value",
+	"Photo": "#Control:Photo/#Value",
+	"Notes": "#Control:Notes/#Value",
+	"ReportsTo": "#Control:ReportsTo/#Value",
+	"PhotoPath": "#Control:PhotoPath/#Value"
+},
+	"Target": {
+		"EntitySet": "Employees",
+		"Service": "/prueba/Services/prueba.service"
+	},
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"_Type": "Action.Type.ODataService.CreateEntity"
+}

@@ -1,0 +1,39 @@
+{
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/CloseModalPage_Cancel.action",
+			"Position": "left",
+			"SystemItem": "Cancel"
+		}, {
+			"OnPress": "/prueba/Actions/Product_Sales_for_1997/Product_Sales_for_1997_CreateEntity.action",
+			"Position": "right",
+			"SystemItem": "Save"
+		}]
+	},
+	"Caption": "Create Product_Sales_for_1997",
+	"Controls": [{
+		"Sections": [{
+			"Controls": [
+	{
+		"Caption": "CategoryName",
+		"_Name": "CategoryName",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ProductName",
+		"_Name": "ProductName",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ProductSales",
+		"_Name": "ProductSales",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	}
+]
+		}],
+		"_Name": "FormCellContainer",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "Product_Sales_for_1997_Create"
+}

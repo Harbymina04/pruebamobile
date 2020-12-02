@@ -1,0 +1,54 @@
+{
+	"Caption": "Current_Product_Lists Details",
+
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/Current_Product_Lists/NavToCurrent_Product_Lists_Edit.action",
+			"Position": "right",
+			"SystemItem": "Edit"
+		}, {
+			"OnPress": "/prueba/Rules/Current_Product_Lists/Current_Product_Lists_DeleteConfirmation.js",
+			"Position": "right",
+			"SystemItem": "Trash"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"ObjectHeader": {
+				"DetailImage": "",
+				"HeadlineText": "{ProductID}",
+				"Subhead": "",
+				"Tags": [],
+				"BodyText": "",
+				"Footnote": "",
+				"Description": "{ProductName}",
+				"StatusText": "",
+				"StatusImage": "",
+				"SubstatusImage": "",
+				"SubstatusText": ""
+			},
+			"_Type": "Section.Type.ObjectHeader"
+		}, {
+			"KeyAndValues": [
+	{
+		"KeyName": "ProductID",
+		"Value": "{ProductID}"
+	},
+	{
+		"KeyName": "ProductName",
+		"Value": "{ProductName}"
+	}
+],
+			"Layout": {
+				"NumberOfColumns": 2
+			},
+			"MaxItemCount": 1,
+			"_Name": "SectionKeyValue0",
+			"_Type": "Section.Type.KeyValue"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Current_Product_Lists_Detail"
+}

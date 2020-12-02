@@ -1,0 +1,116 @@
+{
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/CloseModalPage_Cancel.action",
+			"Position": "left",
+			"SystemItem": "Cancel"
+		}, {
+			"OnPress": "/prueba/Actions/Employees/Employees_CreateEntity.action",
+			"Position": "right",
+			"SystemItem": "Save"
+		}]
+	},
+	"Caption": "Create Employee",
+	"Controls": [{
+		"Sections": [{
+			"Controls": [
+	{
+		"Caption": "EmployeeID",
+		"_Name": "EmployeeID",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "LastName",
+		"_Name": "LastName",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "FirstName",
+		"_Name": "FirstName",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Title",
+		"_Name": "Title",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "TitleOfCourtesy",
+		"_Name": "TitleOfCourtesy",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Mode": "Date",
+		"_Name": "BirthDate",
+		"Caption": "BirthDate",
+		"_Type": "Control.Type.FormCell.DatePicker"
+	},
+	{
+		"Mode": "Date",
+		"_Name": "HireDate",
+		"Caption": "HireDate",
+		"_Type": "Control.Type.FormCell.DatePicker"
+	},
+	{
+		"Caption": "Address",
+		"_Name": "Address",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "City",
+		"_Name": "City",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Region",
+		"_Name": "Region",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "PostalCode",
+		"_Name": "PostalCode",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Country",
+		"_Name": "Country",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "HomePhone",
+		"_Name": "HomePhone",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Extension",
+		"_Name": "Extension",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Photo",
+		"_Name": "Photo",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Notes",
+		"_Name": "Notes",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ReportsTo",
+		"_Name": "ReportsTo",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "PhotoPath",
+		"_Name": "PhotoPath",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	}
+]
+		}],
+		"_Name": "FormCellContainer",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "Employees_Create"
+}

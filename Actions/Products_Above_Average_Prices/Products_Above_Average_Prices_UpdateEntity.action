@@ -1,0 +1,18 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"Target": {
+		"EntitySet": "Products_Above_Average_Prices",
+		"Service": "/prueba/Services/prueba.service",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"Properties":  {
+	"ProductName": "#Control:ProductName/#Value",
+	"UnitPrice": "#Control:UnitPrice/#Value"
+},
+	"UpdateLinks": [],
+	"ActionResult": {
+		"_Name": "update"
+	},
+	"OnSuccess": "/prueba/Actions/UpdateEntitySuccessMessage.action",
+	"OnFailure": "/prueba/Actions/UpdateEntityFailureMessage.action"
+}

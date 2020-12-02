@@ -1,0 +1,19 @@
+{
+	"CreateLinks": [],
+	"OnFailure": "/prueba/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/prueba/Actions/CreateEntitySuccessMessage.action",
+	"Properties": {
+	"SaleAmount": "#Control:SaleAmount/#Value",
+	"OrderID": "#Control:OrderID/#Value",
+	"CompanyName": "#Control:CompanyName/#Value",
+	"ShippedDate": "#Control:ShippedDate/#Value"
+},
+	"Target": {
+		"EntitySet": "Sales_Totals_by_Amounts",
+		"Service": "/prueba/Services/prueba.service"
+	},
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"_Type": "Action.Type.ODataService.CreateEntity"
+}

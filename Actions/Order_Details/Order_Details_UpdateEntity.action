@@ -1,0 +1,21 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"Target": {
+		"EntitySet": "Order_Details",
+		"Service": "/prueba/Services/prueba.service",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"Properties":  {
+	"OrderID": "#Control:OrderID/#Value",
+	"ProductID": "#Control:ProductID/#Value",
+	"UnitPrice": "#Control:UnitPrice/#Value",
+	"Quantity": "#Control:Quantity/#Value",
+	"Discount": "#Control:Discount/#Value"
+},
+	"UpdateLinks": [],
+	"ActionResult": {
+		"_Name": "update"
+	},
+	"OnSuccess": "/prueba/Actions/UpdateEntitySuccessMessage.action",
+	"OnFailure": "/prueba/Actions/UpdateEntityFailureMessage.action"
+}

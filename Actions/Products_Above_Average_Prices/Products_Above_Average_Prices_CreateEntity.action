@@ -1,0 +1,17 @@
+{
+	"CreateLinks": [],
+	"OnFailure": "/prueba/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/prueba/Actions/CreateEntitySuccessMessage.action",
+	"Properties": {
+	"ProductName": "#Control:ProductName/#Value",
+	"UnitPrice": "#Control:UnitPrice/#Value"
+},
+	"Target": {
+		"EntitySet": "Products_Above_Average_Prices",
+		"Service": "/prueba/Services/prueba.service"
+	},
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"_Type": "Action.Type.ODataService.CreateEntity"
+}

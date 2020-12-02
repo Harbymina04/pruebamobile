@@ -1,0 +1,67 @@
+{
+	"Caption": "Update Order_Details_Extended",
+	"ActionBar": {
+		"Items": [{
+			"Position": "left",
+			"SystemItem": "Cancel",
+			"OnPress": "/prueba/Actions/CloseModalPage_Cancel.action"
+		}, {
+			"Position": "right",
+			"SystemItem": "Save",
+			"OnPress": "/prueba/Actions/Order_Details_Extendeds/Order_Details_Extendeds_UpdateEntity.action"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Caption": "",
+			"Controls": [
+	{
+		"Caption": "OrderID",
+		"_Name": "OrderID",
+		"Value": "{OrderID}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ProductID",
+		"_Name": "ProductID",
+		"Value": "{ProductID}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ProductName",
+		"_Name": "ProductName",
+		"Value": "{ProductName}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "UnitPrice",
+		"_Name": "UnitPrice",
+		"Value": "{UnitPrice}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Quantity",
+		"_Name": "Quantity",
+		"Value": "{Quantity}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Discount",
+		"_Name": "Discount",
+		"Value": "{Discount}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ExtendedPrice",
+		"_Name": "ExtendedPrice",
+		"Value": "{ExtendedPrice}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	}
+]
+		}],
+		"_Name": "PageOneFormCell",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "Order_Details_Extendeds_Edit"
+}

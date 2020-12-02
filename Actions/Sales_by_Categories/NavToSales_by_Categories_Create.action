@@ -1,0 +1,6 @@
+{
+	"ModalPageFullscreen": false,
+	"ModalPage": true,
+	"PageToOpen": "/prueba/Pages/Sales_by_Categories/Sales_by_Categories_Create.page",
+	"_Type": "Action.Type.Navigation"
+}

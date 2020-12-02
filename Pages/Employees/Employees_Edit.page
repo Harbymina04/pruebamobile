@@ -1,0 +1,135 @@
+{
+	"Caption": "Update Employee",
+	"ActionBar": {
+		"Items": [{
+			"Position": "left",
+			"SystemItem": "Cancel",
+			"OnPress": "/prueba/Actions/CloseModalPage_Cancel.action"
+		}, {
+			"Position": "right",
+			"SystemItem": "Save",
+			"OnPress": "/prueba/Actions/Employees/Employees_UpdateEntity.action"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Caption": "",
+			"Controls": [
+	{
+		"Caption": "EmployeeID",
+		"_Name": "EmployeeID",
+		"Value": "{EmployeeID}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "LastName",
+		"_Name": "LastName",
+		"Value": "{LastName}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "FirstName",
+		"_Name": "FirstName",
+		"Value": "{FirstName}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Title",
+		"_Name": "Title",
+		"Value": "{Title}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "TitleOfCourtesy",
+		"_Name": "TitleOfCourtesy",
+		"Value": "{TitleOfCourtesy}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Mode": "Date",
+		"_Name": "BirthDate",
+		"Value": "{BirthDate}",
+		"Caption": "BirthDate",
+		"_Type": "Control.Type.FormCell.DatePicker"
+	},
+	{
+		"Mode": "Date",
+		"_Name": "HireDate",
+		"Value": "{HireDate}",
+		"Caption": "HireDate",
+		"_Type": "Control.Type.FormCell.DatePicker"
+	},
+	{
+		"Caption": "Address",
+		"_Name": "Address",
+		"Value": "{Address}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "City",
+		"_Name": "City",
+		"Value": "{City}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Region",
+		"_Name": "Region",
+		"Value": "{Region}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "PostalCode",
+		"_Name": "PostalCode",
+		"Value": "{PostalCode}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Country",
+		"_Name": "Country",
+		"Value": "{Country}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "HomePhone",
+		"_Name": "HomePhone",
+		"Value": "{HomePhone}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Extension",
+		"_Name": "Extension",
+		"Value": "{Extension}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Photo",
+		"_Name": "Photo",
+		"Value": "{Photo}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Notes",
+		"_Name": "Notes",
+		"Value": "{Notes}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ReportsTo",
+		"_Name": "ReportsTo",
+		"Value": "{ReportsTo}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "PhotoPath",
+		"_Name": "PhotoPath",
+		"Value": "{PhotoPath}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	}
+]
+		}],
+		"_Name": "PageOneFormCell",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "Employees_Edit"
+}

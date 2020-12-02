@@ -1,0 +1,6 @@
+{
+	"ModalPageFullscreen": false,
+	"ModalPage": true,
+	"PageToOpen": "/prueba/Pages/Current_Product_Lists/Current_Product_Lists_Edit.page",
+	"_Type": "Action.Type.Navigation"
+}

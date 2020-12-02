@@ -1,0 +1,17 @@
+{
+	"CreateLinks": [],
+	"OnFailure": "/prueba/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/prueba/Actions/CreateEntitySuccessMessage.action",
+	"Properties": {
+	"CategoryName": "#Control:CategoryName/#Value",
+	"CategorySales": "#Control:CategorySales/#Value"
+},
+	"Target": {
+		"EntitySet": "Category_Sales_for_1997",
+		"Service": "/prueba/Services/prueba.service"
+	},
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"_Type": "Action.Type.ODataService.CreateEntity"
+}

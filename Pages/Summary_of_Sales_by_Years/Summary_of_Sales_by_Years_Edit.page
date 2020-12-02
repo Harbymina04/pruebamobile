@@ -1,0 +1,44 @@
+{
+	"Caption": "Update Summary_of_Sales_by_Year",
+	"ActionBar": {
+		"Items": [{
+			"Position": "left",
+			"SystemItem": "Cancel",
+			"OnPress": "/prueba/Actions/CloseModalPage_Cancel.action"
+		}, {
+			"Position": "right",
+			"SystemItem": "Save",
+			"OnPress": "/prueba/Actions/Summary_of_Sales_by_Years/Summary_of_Sales_by_Years_UpdateEntity.action"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Caption": "",
+			"Controls": [
+	{
+		"Mode": "Date",
+		"_Name": "ShippedDate",
+		"Value": "{ShippedDate}",
+		"Caption": "ShippedDate",
+		"_Type": "Control.Type.FormCell.DatePicker"
+	},
+	{
+		"Caption": "OrderID",
+		"_Name": "OrderID",
+		"Value": "{OrderID}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Subtotal",
+		"_Name": "Subtotal",
+		"Value": "{Subtotal}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	}
+]
+		}],
+		"_Name": "PageOneFormCell",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "Summary_of_Sales_by_Years_Edit"
+}

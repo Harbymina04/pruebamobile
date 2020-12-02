@@ -1,0 +1,29 @@
+{
+	"CreateLinks": [],
+	"OnFailure": "/prueba/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/prueba/Actions/CreateEntitySuccessMessage.action",
+	"Properties": {
+	"OrderID": "#Control:OrderID/#Value",
+	"CustomerID": "#Control:CustomerID/#Value",
+	"EmployeeID": "#Control:EmployeeID/#Value",
+	"OrderDate": "#Control:OrderDate/#Value",
+	"RequiredDate": "#Control:RequiredDate/#Value",
+	"ShippedDate": "#Control:ShippedDate/#Value",
+	"ShipVia": "#Control:ShipVia/#Value",
+	"Freight": "#Control:Freight/#Value",
+	"ShipName": "#Control:ShipName/#Value",
+	"ShipAddress": "#Control:ShipAddress/#Value",
+	"ShipCity": "#Control:ShipCity/#Value",
+	"ShipRegion": "#Control:ShipRegion/#Value",
+	"ShipPostalCode": "#Control:ShipPostalCode/#Value",
+	"ShipCountry": "#Control:ShipCountry/#Value"
+},
+	"Target": {
+		"EntitySet": "Orders",
+		"Service": "/prueba/Services/prueba.service"
+	},
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"_Type": "Action.Type.ODataService.CreateEntity"
+}

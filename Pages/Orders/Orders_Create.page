@@ -1,0 +1,97 @@
+{
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/CloseModalPage_Cancel.action",
+			"Position": "left",
+			"SystemItem": "Cancel"
+		}, {
+			"OnPress": "/prueba/Actions/Orders/Orders_CreateEntity.action",
+			"Position": "right",
+			"SystemItem": "Save"
+		}]
+	},
+	"Caption": "Create Order",
+	"Controls": [{
+		"Sections": [{
+			"Controls": [
+	{
+		"Caption": "OrderID",
+		"_Name": "OrderID",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "CustomerID",
+		"_Name": "CustomerID",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "EmployeeID",
+		"_Name": "EmployeeID",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Mode": "Date",
+		"_Name": "OrderDate",
+		"Caption": "OrderDate",
+		"_Type": "Control.Type.FormCell.DatePicker"
+	},
+	{
+		"Mode": "Date",
+		"_Name": "RequiredDate",
+		"Caption": "RequiredDate",
+		"_Type": "Control.Type.FormCell.DatePicker"
+	},
+	{
+		"Mode": "Date",
+		"_Name": "ShippedDate",
+		"Caption": "ShippedDate",
+		"_Type": "Control.Type.FormCell.DatePicker"
+	},
+	{
+		"Caption": "ShipVia",
+		"_Name": "ShipVia",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Freight",
+		"_Name": "Freight",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ShipName",
+		"_Name": "ShipName",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ShipAddress",
+		"_Name": "ShipAddress",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ShipCity",
+		"_Name": "ShipCity",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ShipRegion",
+		"_Name": "ShipRegion",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ShipPostalCode",
+		"_Name": "ShipPostalCode",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ShipCountry",
+		"_Name": "ShipCountry",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	}
+]
+		}],
+		"_Name": "FormCellContainer",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "Orders_Create"
+}

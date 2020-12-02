@@ -1,0 +1,97 @@
+{
+	"Caption": "Update Supplier",
+	"ActionBar": {
+		"Items": [{
+			"Position": "left",
+			"SystemItem": "Cancel",
+			"OnPress": "/prueba/Actions/CloseModalPage_Cancel.action"
+		}, {
+			"Position": "right",
+			"SystemItem": "Save",
+			"OnPress": "/prueba/Actions/Suppliers/Suppliers_UpdateEntity.action"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Caption": "",
+			"Controls": [
+	{
+		"Caption": "SupplierID",
+		"_Name": "SupplierID",
+		"Value": "{SupplierID}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "CompanyName",
+		"_Name": "CompanyName",
+		"Value": "{CompanyName}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ContactName",
+		"_Name": "ContactName",
+		"Value": "{ContactName}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ContactTitle",
+		"_Name": "ContactTitle",
+		"Value": "{ContactTitle}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Address",
+		"_Name": "Address",
+		"Value": "{Address}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "City",
+		"_Name": "City",
+		"Value": "{City}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Region",
+		"_Name": "Region",
+		"Value": "{Region}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "PostalCode",
+		"_Name": "PostalCode",
+		"Value": "{PostalCode}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Country",
+		"_Name": "Country",
+		"Value": "{Country}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Phone",
+		"_Name": "Phone",
+		"Value": "{Phone}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Fax",
+		"_Name": "Fax",
+		"Value": "{Fax}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "HomePage",
+		"_Name": "HomePage",
+		"Value": "{HomePage}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	}
+]
+		}],
+		"_Name": "PageOneFormCell",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "Suppliers_Edit"
+}

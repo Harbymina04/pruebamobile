@@ -1,0 +1,74 @@
+{
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/CloseModalPage_Cancel.action",
+			"Position": "left",
+			"SystemItem": "Cancel"
+		}, {
+			"OnPress": "/prueba/Actions/Products/Products_CreateEntity.action",
+			"Position": "right",
+			"SystemItem": "Save"
+		}]
+	},
+	"Caption": "Create Product",
+	"Controls": [{
+		"Sections": [{
+			"Controls": [
+	{
+		"Caption": "ProductID",
+		"_Name": "ProductID",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ProductName",
+		"_Name": "ProductName",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "SupplierID",
+		"_Name": "SupplierID",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "CategoryID",
+		"_Name": "CategoryID",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "QuantityPerUnit",
+		"_Name": "QuantityPerUnit",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "UnitPrice",
+		"_Name": "UnitPrice",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "UnitsInStock",
+		"_Name": "UnitsInStock",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "UnitsOnOrder",
+		"_Name": "UnitsOnOrder",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ReorderLevel",
+		"_Name": "ReorderLevel",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"_Name": "Discontinued",
+		"Caption": "Discontinued",
+		"_Type": "Control.Type.FormCell.Switch"
+	}
+]
+		}],
+		"_Name": "FormCellContainer",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "Products_Create"
+}

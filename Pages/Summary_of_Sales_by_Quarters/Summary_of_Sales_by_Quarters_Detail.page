@@ -1,0 +1,58 @@
+{
+	"Caption": "Summary_of_Sales_by_Quarters Details",
+
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/Summary_of_Sales_by_Quarters/NavToSummary_of_Sales_by_Quarters_Edit.action",
+			"Position": "right",
+			"SystemItem": "Edit"
+		}, {
+			"OnPress": "/prueba/Rules/Summary_of_Sales_by_Quarters/Summary_of_Sales_by_Quarters_DeleteConfirmation.js",
+			"Position": "right",
+			"SystemItem": "Trash"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"ObjectHeader": {
+				"DetailImage": "",
+				"HeadlineText": "{ShippedDate}",
+				"Subhead": "{Subtotal}",
+				"Tags": [],
+				"BodyText": "",
+				"Footnote": "",
+				"Description": "{OrderID}",
+				"StatusText": "",
+				"StatusImage": "",
+				"SubstatusImage": "",
+				"SubstatusText": ""
+			},
+			"_Type": "Section.Type.ObjectHeader"
+		}, {
+			"KeyAndValues": [
+	{
+		"KeyName": "ShippedDate",
+		"Value": "{ShippedDate}"
+	},
+	{
+		"KeyName": "OrderID",
+		"Value": "{OrderID}"
+	},
+	{
+		"KeyName": "Subtotal",
+		"Value": "{Subtotal}"
+	}
+],
+			"Layout": {
+				"NumberOfColumns": 2
+			},
+			"MaxItemCount": 1,
+			"_Name": "SectionKeyValue0",
+			"_Type": "Section.Type.KeyValue"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Summary_of_Sales_by_Quarters_Detail"
+}

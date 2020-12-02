@@ -1,0 +1,90 @@
+{
+	"Caption": "Customers Details",
+
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/Customers/NavToCustomers_Edit.action",
+			"Position": "right",
+			"SystemItem": "Edit"
+		}, {
+			"OnPress": "/prueba/Rules/Customers/Customers_DeleteConfirmation.js",
+			"Position": "right",
+			"SystemItem": "Trash"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"ObjectHeader": {
+				"DetailImage": "",
+				"HeadlineText": "{CustomerID}",
+				"Subhead": "{ContactName}",
+				"Tags": [],
+				"BodyText": "",
+				"Footnote": "{ContactTitle}",
+				"Description": "{CompanyName}",
+				"StatusText": "{Address}",
+				"StatusImage": "",
+				"SubstatusImage": "",
+				"SubstatusText": "{City}"
+			},
+			"_Type": "Section.Type.ObjectHeader"
+		}, {
+			"KeyAndValues": [
+	{
+		"KeyName": "CustomerID",
+		"Value": "{CustomerID}"
+	},
+	{
+		"KeyName": "CompanyName",
+		"Value": "{CompanyName}"
+	},
+	{
+		"KeyName": "ContactName",
+		"Value": "{ContactName}"
+	},
+	{
+		"KeyName": "ContactTitle",
+		"Value": "{ContactTitle}"
+	},
+	{
+		"KeyName": "Address",
+		"Value": "{Address}"
+	},
+	{
+		"KeyName": "City",
+		"Value": "{City}"
+	},
+	{
+		"KeyName": "Region",
+		"Value": "{Region}"
+	},
+	{
+		"KeyName": "PostalCode",
+		"Value": "{PostalCode}"
+	},
+	{
+		"KeyName": "Country",
+		"Value": "{Country}"
+	},
+	{
+		"KeyName": "Phone",
+		"Value": "{Phone}"
+	},
+	{
+		"KeyName": "Fax",
+		"Value": "{Fax}"
+	}
+],
+			"Layout": {
+				"NumberOfColumns": 2
+			},
+			"MaxItemCount": 1,
+			"_Name": "SectionKeyValue0",
+			"_Type": "Section.Type.KeyValue"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Customers_Detail"
+}

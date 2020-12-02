@@ -1,0 +1,184 @@
+{
+	"Caption": "Update Invoice",
+	"ActionBar": {
+		"Items": [{
+			"Position": "left",
+			"SystemItem": "Cancel",
+			"OnPress": "/prueba/Actions/CloseModalPage_Cancel.action"
+		}, {
+			"Position": "right",
+			"SystemItem": "Save",
+			"OnPress": "/prueba/Actions/Invoices/Invoices_UpdateEntity.action"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Caption": "",
+			"Controls": [
+	{
+		"Caption": "ShipName",
+		"_Name": "ShipName",
+		"Value": "{ShipName}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ShipAddress",
+		"_Name": "ShipAddress",
+		"Value": "{ShipAddress}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ShipCity",
+		"_Name": "ShipCity",
+		"Value": "{ShipCity}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ShipRegion",
+		"_Name": "ShipRegion",
+		"Value": "{ShipRegion}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ShipPostalCode",
+		"_Name": "ShipPostalCode",
+		"Value": "{ShipPostalCode}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ShipCountry",
+		"_Name": "ShipCountry",
+		"Value": "{ShipCountry}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "CustomerID",
+		"_Name": "CustomerID",
+		"Value": "{CustomerID}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "CustomerName",
+		"_Name": "CustomerName",
+		"Value": "{CustomerName}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Address",
+		"_Name": "Address",
+		"Value": "{Address}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "City",
+		"_Name": "City",
+		"Value": "{City}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Region",
+		"_Name": "Region",
+		"Value": "{Region}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "PostalCode",
+		"_Name": "PostalCode",
+		"Value": "{PostalCode}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Country",
+		"_Name": "Country",
+		"Value": "{Country}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Salesperson",
+		"_Name": "Salesperson",
+		"Value": "{Salesperson}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "OrderID",
+		"_Name": "OrderID",
+		"Value": "{OrderID}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Mode": "Date",
+		"_Name": "OrderDate",
+		"Value": "{OrderDate}",
+		"Caption": "OrderDate",
+		"_Type": "Control.Type.FormCell.DatePicker"
+	},
+	{
+		"Mode": "Date",
+		"_Name": "RequiredDate",
+		"Value": "{RequiredDate}",
+		"Caption": "RequiredDate",
+		"_Type": "Control.Type.FormCell.DatePicker"
+	},
+	{
+		"Mode": "Date",
+		"_Name": "ShippedDate",
+		"Value": "{ShippedDate}",
+		"Caption": "ShippedDate",
+		"_Type": "Control.Type.FormCell.DatePicker"
+	},
+	{
+		"Caption": "ShipperName",
+		"_Name": "ShipperName",
+		"Value": "{ShipperName}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ProductID",
+		"_Name": "ProductID",
+		"Value": "{ProductID}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ProductName",
+		"_Name": "ProductName",
+		"Value": "{ProductName}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "UnitPrice",
+		"_Name": "UnitPrice",
+		"Value": "{UnitPrice}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Quantity",
+		"_Name": "Quantity",
+		"Value": "{Quantity}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Discount",
+		"_Name": "Discount",
+		"Value": "{Discount}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ExtendedPrice",
+		"_Name": "ExtendedPrice",
+		"Value": "{ExtendedPrice}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Freight",
+		"_Name": "Freight",
+		"Value": "{Freight}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	}
+]
+		}],
+		"_Name": "PageOneFormCell",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "Invoices_Edit"
+}

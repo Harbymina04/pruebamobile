@@ -1,0 +1,25 @@
+{
+	"CreateLinks": [],
+	"OnFailure": "/prueba/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/prueba/Actions/CreateEntitySuccessMessage.action",
+	"Properties": {
+	"ProductID": "#Control:ProductID/#Value",
+	"ProductName": "#Control:ProductName/#Value",
+	"SupplierID": "#Control:SupplierID/#Value",
+	"CategoryID": "#Control:CategoryID/#Value",
+	"QuantityPerUnit": "#Control:QuantityPerUnit/#Value",
+	"UnitPrice": "#Control:UnitPrice/#Value",
+	"UnitsInStock": "#Control:UnitsInStock/#Value",
+	"UnitsOnOrder": "#Control:UnitsOnOrder/#Value",
+	"ReorderLevel": "#Control:ReorderLevel/#Value",
+	"Discontinued": "#Control:Discontinued/#Value"
+},
+	"Target": {
+		"EntitySet": "Products",
+		"Service": "/prueba/Services/prueba.service"
+	},
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"_Type": "Action.Type.ODataService.CreateEntity"
+}

@@ -1,0 +1,50 @@
+{
+	"Caption": "Alphabetical_list_of_products",
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/Alphabetical_list_of_products/NavToAlphabetical_list_of_products_Create.action",
+			"Position": "right",
+			"SystemItem": "Add"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Header": {
+
+				"UseTopPadding": false
+			},
+			"ObjectCell": {
+				"AccessoryType": "disclosureIndicator",
+				"Description": "{ProductName}",
+				"DetailImage": "",
+				"DetailImageIsCircular": false,
+				"Icons": [],
+				"OnPress": "/prueba/Actions/Alphabetical_list_of_products/NavToAlphabetical_list_of_products_Detail.action",
+				"StatusImage": "",
+				"Title": "{ProductID}",
+				"Footnote": "{CategoryID}",
+				"PreserveIconStackSpacing": false,
+				"StatusText": "{QuantityPerUnit}",
+				"Subhead": "{SupplierID}",
+				"SubstatusText": "{UnitPrice}"
+			},
+			"Search": {
+				"Enabled": true,
+				"Placeholder": "Item Search",
+				"BarcodeScanner": true,
+				"Delay": 500,
+				"MinimumCharacterThreshold": 3
+			},
+			"Target": {
+				"EntitySet": "Alphabetical_list_of_products",
+				"Service": "/prueba/Services/prueba.service",
+				"QueryOptions": ""
+			},
+			"_Type": "Section.Type.ObjectTable"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Alphabetical_list_of_products_List"
+}

@@ -1,0 +1,6 @@
+{
+	"ModalPageFullscreen": false,
+	"ModalPage": true,
+	"PageToOpen": "/prueba/Pages/Order_Details_Extendeds/Order_Details_Extendeds_Edit.page",
+	"_Type": "Action.Type.Navigation"
+}

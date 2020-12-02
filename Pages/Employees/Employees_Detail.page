@@ -1,0 +1,118 @@
+{
+	"Caption": "Employees Details",
+
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/Employees/NavToEmployees_Edit.action",
+			"Position": "right",
+			"SystemItem": "Edit"
+		}, {
+			"OnPress": "/prueba/Rules/Employees/Employees_DeleteConfirmation.js",
+			"Position": "right",
+			"SystemItem": "Trash"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"ObjectHeader": {
+				"DetailImage": "",
+				"HeadlineText": "{EmployeeID}",
+				"Subhead": "{FirstName}",
+				"Tags": [],
+				"BodyText": "",
+				"Footnote": "{Title}",
+				"Description": "{LastName}",
+				"StatusText": "{TitleOfCourtesy}",
+				"StatusImage": "",
+				"SubstatusImage": "",
+				"SubstatusText": "{BirthDate}"
+			},
+			"_Type": "Section.Type.ObjectHeader"
+		}, {
+			"KeyAndValues": [
+	{
+		"KeyName": "EmployeeID",
+		"Value": "{EmployeeID}"
+	},
+	{
+		"KeyName": "LastName",
+		"Value": "{LastName}"
+	},
+	{
+		"KeyName": "FirstName",
+		"Value": "{FirstName}"
+	},
+	{
+		"KeyName": "Title",
+		"Value": "{Title}"
+	},
+	{
+		"KeyName": "TitleOfCourtesy",
+		"Value": "{TitleOfCourtesy}"
+	},
+	{
+		"KeyName": "BirthDate",
+		"Value": "{BirthDate}"
+	},
+	{
+		"KeyName": "HireDate",
+		"Value": "{HireDate}"
+	},
+	{
+		"KeyName": "Address",
+		"Value": "{Address}"
+	},
+	{
+		"KeyName": "City",
+		"Value": "{City}"
+	},
+	{
+		"KeyName": "Region",
+		"Value": "{Region}"
+	},
+	{
+		"KeyName": "PostalCode",
+		"Value": "{PostalCode}"
+	},
+	{
+		"KeyName": "Country",
+		"Value": "{Country}"
+	},
+	{
+		"KeyName": "HomePhone",
+		"Value": "{HomePhone}"
+	},
+	{
+		"KeyName": "Extension",
+		"Value": "{Extension}"
+	},
+	{
+		"KeyName": "Photo",
+		"Value": "{Photo}"
+	},
+	{
+		"KeyName": "Notes",
+		"Value": "{Notes}"
+	},
+	{
+		"KeyName": "ReportsTo",
+		"Value": "{ReportsTo}"
+	},
+	{
+		"KeyName": "PhotoPath",
+		"Value": "{PhotoPath}"
+	}
+],
+			"Layout": {
+				"NumberOfColumns": 2
+			},
+			"MaxItemCount": 1,
+			"_Name": "SectionKeyValue0",
+			"_Type": "Section.Type.KeyValue"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Employees_Detail"
+}

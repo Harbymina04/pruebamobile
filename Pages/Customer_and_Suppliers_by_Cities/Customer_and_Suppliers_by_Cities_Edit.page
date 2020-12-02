@@ -1,0 +1,49 @@
+{
+	"Caption": "Update Customer_and_Suppliers_by_City",
+	"ActionBar": {
+		"Items": [{
+			"Position": "left",
+			"SystemItem": "Cancel",
+			"OnPress": "/prueba/Actions/CloseModalPage_Cancel.action"
+		}, {
+			"Position": "right",
+			"SystemItem": "Save",
+			"OnPress": "/prueba/Actions/Customer_and_Suppliers_by_Cities/Customer_and_Suppliers_by_Cities_UpdateEntity.action"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Caption": "",
+			"Controls": [
+	{
+		"Caption": "City",
+		"_Name": "City",
+		"Value": "{City}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "CompanyName",
+		"_Name": "CompanyName",
+		"Value": "{CompanyName}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ContactName",
+		"_Name": "ContactName",
+		"Value": "{ContactName}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Relationship",
+		"_Name": "Relationship",
+		"Value": "{Relationship}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	}
+]
+		}],
+		"_Name": "PageOneFormCell",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "Customer_and_Suppliers_by_Cities_Edit"
+}

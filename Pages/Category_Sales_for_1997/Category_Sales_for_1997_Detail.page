@@ -1,0 +1,54 @@
+{
+	"Caption": "Category_Sales_for_1997 Details",
+
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/Category_Sales_for_1997/NavToCategory_Sales_for_1997_Edit.action",
+			"Position": "right",
+			"SystemItem": "Edit"
+		}, {
+			"OnPress": "/prueba/Rules/Category_Sales_for_1997/Category_Sales_for_1997_DeleteConfirmation.js",
+			"Position": "right",
+			"SystemItem": "Trash"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"ObjectHeader": {
+				"DetailImage": "",
+				"HeadlineText": "{CategoryName}",
+				"Subhead": "",
+				"Tags": [],
+				"BodyText": "",
+				"Footnote": "",
+				"Description": "{CategorySales}",
+				"StatusText": "",
+				"StatusImage": "",
+				"SubstatusImage": "",
+				"SubstatusText": ""
+			},
+			"_Type": "Section.Type.ObjectHeader"
+		}, {
+			"KeyAndValues": [
+	{
+		"KeyName": "CategoryName",
+		"Value": "{CategoryName}"
+	},
+	{
+		"KeyName": "CategorySales",
+		"Value": "{CategorySales}"
+	}
+],
+			"Layout": {
+				"NumberOfColumns": 2
+			},
+			"MaxItemCount": 1,
+			"_Name": "SectionKeyValue0",
+			"_Type": "Section.Type.KeyValue"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Category_Sales_for_1997_Detail"
+}

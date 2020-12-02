@@ -1,0 +1,34 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"Target": {
+		"EntitySet": "Employees",
+		"Service": "/prueba/Services/prueba.service",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"Properties":  {
+	"EmployeeID": "#Control:EmployeeID/#Value",
+	"LastName": "#Control:LastName/#Value",
+	"FirstName": "#Control:FirstName/#Value",
+	"Title": "#Control:Title/#Value",
+	"TitleOfCourtesy": "#Control:TitleOfCourtesy/#Value",
+	"BirthDate": "#Control:BirthDate/#Value",
+	"HireDate": "#Control:HireDate/#Value",
+	"Address": "#Control:Address/#Value",
+	"City": "#Control:City/#Value",
+	"Region": "#Control:Region/#Value",
+	"PostalCode": "#Control:PostalCode/#Value",
+	"Country": "#Control:Country/#Value",
+	"HomePhone": "#Control:HomePhone/#Value",
+	"Extension": "#Control:Extension/#Value",
+	"Photo": "#Control:Photo/#Value",
+	"Notes": "#Control:Notes/#Value",
+	"ReportsTo": "#Control:ReportsTo/#Value",
+	"PhotoPath": "#Control:PhotoPath/#Value"
+},
+	"UpdateLinks": [],
+	"ActionResult": {
+		"_Name": "update"
+	},
+	"OnSuccess": "/prueba/Actions/UpdateEntitySuccessMessage.action",
+	"OnFailure": "/prueba/Actions/UpdateEntityFailureMessage.action"
+}

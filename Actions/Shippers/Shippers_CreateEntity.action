@@ -1,0 +1,18 @@
+{
+	"CreateLinks": [],
+	"OnFailure": "/prueba/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/prueba/Actions/CreateEntitySuccessMessage.action",
+	"Properties": {
+	"ShipperID": "#Control:ShipperID/#Value",
+	"CompanyName": "#Control:CompanyName/#Value",
+	"Phone": "#Control:Phone/#Value"
+},
+	"Target": {
+		"EntitySet": "Shippers",
+		"Service": "/prueba/Services/prueba.service"
+	},
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"_Type": "Action.Type.ODataService.CreateEntity"
+}

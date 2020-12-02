@@ -1,0 +1,50 @@
+{
+	"Caption": "Orders_Qries",
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/Orders_Qries/NavToOrders_Qries_Create.action",
+			"Position": "right",
+			"SystemItem": "Add"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Header": {
+
+				"UseTopPadding": false
+			},
+			"ObjectCell": {
+				"AccessoryType": "disclosureIndicator",
+				"Description": "{CustomerID}",
+				"DetailImage": "",
+				"DetailImageIsCircular": false,
+				"Icons": [],
+				"OnPress": "/prueba/Actions/Orders_Qries/NavToOrders_Qries_Detail.action",
+				"StatusImage": "",
+				"Title": "{OrderID}",
+				"Footnote": "{OrderDate}",
+				"PreserveIconStackSpacing": false,
+				"StatusText": "{RequiredDate}",
+				"Subhead": "{EmployeeID}",
+				"SubstatusText": "{ShippedDate}"
+			},
+			"Search": {
+				"Enabled": true,
+				"Placeholder": "Item Search",
+				"BarcodeScanner": true,
+				"Delay": 500,
+				"MinimumCharacterThreshold": 3
+			},
+			"Target": {
+				"EntitySet": "Orders_Qries",
+				"Service": "/prueba/Services/prueba.service",
+				"QueryOptions": ""
+			},
+			"_Type": "Section.Type.ObjectTable"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Orders_Qries_List"
+}

@@ -1,0 +1,50 @@
+{
+	"Caption": "CustomerDemographics",
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/CustomerDemographics/NavToCustomerDemographics_Create.action",
+			"Position": "right",
+			"SystemItem": "Add"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Header": {
+
+				"UseTopPadding": false
+			},
+			"ObjectCell": {
+				"AccessoryType": "disclosureIndicator",
+				"Description": "{CustomerDesc}",
+				"DetailImage": "",
+				"DetailImageIsCircular": false,
+				"Icons": [],
+				"OnPress": "/prueba/Actions/CustomerDemographics/NavToCustomerDemographics_Detail.action",
+				"StatusImage": "",
+				"Title": "{CustomerTypeID}",
+				"Footnote": "",
+				"PreserveIconStackSpacing": false,
+				"StatusText": "",
+				"Subhead": "",
+				"SubstatusText": ""
+			},
+			"Search": {
+				"Enabled": true,
+				"Placeholder": "Item Search",
+				"BarcodeScanner": true,
+				"Delay": 500,
+				"MinimumCharacterThreshold": 3
+			},
+			"Target": {
+				"EntitySet": "CustomerDemographics",
+				"Service": "/prueba/Services/prueba.service",
+				"QueryOptions": ""
+			},
+			"_Type": "Section.Type.ObjectTable"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "CustomerDemographics_List"
+}

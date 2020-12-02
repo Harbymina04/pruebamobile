@@ -1,0 +1,6 @@
+{
+	"ModalPageFullscreen": false,
+	"ModalPage": true,
+	"PageToOpen": "/prueba/Pages/Alphabetical_list_of_products/Alphabetical_list_of_products_Create.page",
+	"_Type": "Action.Type.Navigation"
+}

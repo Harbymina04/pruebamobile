@@ -1,0 +1,50 @@
+{
+	"Caption": "Customers",
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/Customers/NavToCustomers_Create.action",
+			"Position": "right",
+			"SystemItem": "Add"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Header": {
+
+				"UseTopPadding": false
+			},
+			"ObjectCell": {
+				"AccessoryType": "disclosureIndicator",
+				"Description": "{CompanyName}",
+				"DetailImage": "",
+				"DetailImageIsCircular": false,
+				"Icons": [],
+				"OnPress": "/prueba/Actions/Customers/NavToCustomers_Detail.action",
+				"StatusImage": "",
+				"Title": "{CustomerID}",
+				"Footnote": "{ContactTitle}",
+				"PreserveIconStackSpacing": false,
+				"StatusText": "{Address}",
+				"Subhead": "{ContactName}",
+				"SubstatusText": "{City}"
+			},
+			"Search": {
+				"Enabled": true,
+				"Placeholder": "Item Search",
+				"BarcodeScanner": true,
+				"Delay": 500,
+				"MinimumCharacterThreshold": 3
+			},
+			"Target": {
+				"EntitySet": "Customers",
+				"Service": "/prueba/Services/prueba.service",
+				"QueryOptions": ""
+			},
+			"_Type": "Section.Type.ObjectTable"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Customers_List"
+}

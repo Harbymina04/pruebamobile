@@ -1,0 +1,19 @@
+{
+	"CreateLinks": [],
+	"OnFailure": "/prueba/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/prueba/Actions/CreateEntitySuccessMessage.action",
+	"Properties": {
+	"City": "#Control:City/#Value",
+	"CompanyName": "#Control:CompanyName/#Value",
+	"ContactName": "#Control:ContactName/#Value",
+	"Relationship": "#Control:Relationship/#Value"
+},
+	"Target": {
+		"EntitySet": "Customer_and_Suppliers_by_Cities",
+		"Service": "/prueba/Services/prueba.service"
+	},
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"_Type": "Action.Type.ODataService.CreateEntity"
+}

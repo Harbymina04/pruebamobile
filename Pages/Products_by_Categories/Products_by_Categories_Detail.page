@@ -1,0 +1,66 @@
+{
+	"Caption": "Products_by_Categories Details",
+
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/Products_by_Categories/NavToProducts_by_Categories_Edit.action",
+			"Position": "right",
+			"SystemItem": "Edit"
+		}, {
+			"OnPress": "/prueba/Rules/Products_by_Categories/Products_by_Categories_DeleteConfirmation.js",
+			"Position": "right",
+			"SystemItem": "Trash"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"ObjectHeader": {
+				"DetailImage": "",
+				"HeadlineText": "{CategoryName}",
+				"Subhead": "{QuantityPerUnit}",
+				"Tags": [],
+				"BodyText": "",
+				"Footnote": "{UnitsInStock}",
+				"Description": "{ProductName}",
+				"StatusText": "{Discontinued}",
+				"StatusImage": "",
+				"SubstatusImage": "",
+				"SubstatusText": ""
+			},
+			"_Type": "Section.Type.ObjectHeader"
+		}, {
+			"KeyAndValues": [
+	{
+		"KeyName": "CategoryName",
+		"Value": "{CategoryName}"
+	},
+	{
+		"KeyName": "ProductName",
+		"Value": "{ProductName}"
+	},
+	{
+		"KeyName": "QuantityPerUnit",
+		"Value": "{QuantityPerUnit}"
+	},
+	{
+		"KeyName": "UnitsInStock",
+		"Value": "{UnitsInStock}"
+	},
+	{
+		"KeyName": "Discontinued",
+		"Value": "{Discontinued}"
+	}
+],
+			"Layout": {
+				"NumberOfColumns": 2
+			},
+			"MaxItemCount": 1,
+			"_Name": "SectionKeyValue0",
+			"_Type": "Section.Type.KeyValue"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Products_by_Categories_Detail"
+}

@@ -1,0 +1,18 @@
+{
+	"CreateLinks": [],
+	"OnFailure": "/prueba/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/prueba/Actions/CreateEntitySuccessMessage.action",
+	"Properties": {
+	"ShippedDate": "#Control:ShippedDate/#Value",
+	"OrderID": "#Control:OrderID/#Value",
+	"Subtotal": "#Control:Subtotal/#Value"
+},
+	"Target": {
+		"EntitySet": "Summary_of_Sales_by_Quarters",
+		"Service": "/prueba/Services/prueba.service"
+	},
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"_Type": "Action.Type.ODataService.CreateEntity"
+}

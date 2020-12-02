@@ -1,0 +1,6 @@
+{
+	"ModalPageFullscreen": false,
+	"ModalPage": true,
+	"PageToOpen": "/prueba/Pages/Sales_Totals_by_Amounts/Sales_Totals_by_Amounts_Create.page",
+	"_Type": "Action.Type.Navigation"
+}

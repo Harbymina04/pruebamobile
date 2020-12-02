@@ -1,0 +1,66 @@
+{
+	"Caption": "Order_Details Details",
+
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/Order_Details/NavToOrder_Details_Edit.action",
+			"Position": "right",
+			"SystemItem": "Edit"
+		}, {
+			"OnPress": "/prueba/Rules/Order_Details/Order_Details_DeleteConfirmation.js",
+			"Position": "right",
+			"SystemItem": "Trash"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"ObjectHeader": {
+				"DetailImage": "",
+				"HeadlineText": "{OrderID}",
+				"Subhead": "{UnitPrice}",
+				"Tags": [],
+				"BodyText": "",
+				"Footnote": "{Quantity}",
+				"Description": "{ProductID}",
+				"StatusText": "{Discount}",
+				"StatusImage": "",
+				"SubstatusImage": "",
+				"SubstatusText": ""
+			},
+			"_Type": "Section.Type.ObjectHeader"
+		}, {
+			"KeyAndValues": [
+	{
+		"KeyName": "OrderID",
+		"Value": "{OrderID}"
+	},
+	{
+		"KeyName": "ProductID",
+		"Value": "{ProductID}"
+	},
+	{
+		"KeyName": "UnitPrice",
+		"Value": "{UnitPrice}"
+	},
+	{
+		"KeyName": "Quantity",
+		"Value": "{Quantity}"
+	},
+	{
+		"KeyName": "Discount",
+		"Value": "{Discount}"
+	}
+],
+			"Layout": {
+				"NumberOfColumns": 2
+			},
+			"MaxItemCount": 1,
+			"_Name": "SectionKeyValue0",
+			"_Type": "Section.Type.KeyValue"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Order_Details_Detail"
+}

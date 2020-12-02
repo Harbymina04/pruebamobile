@@ -1,0 +1,54 @@
+{
+	"Caption": "Order_Subtotals Details",
+
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/Order_Subtotals/NavToOrder_Subtotals_Edit.action",
+			"Position": "right",
+			"SystemItem": "Edit"
+		}, {
+			"OnPress": "/prueba/Rules/Order_Subtotals/Order_Subtotals_DeleteConfirmation.js",
+			"Position": "right",
+			"SystemItem": "Trash"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"ObjectHeader": {
+				"DetailImage": "",
+				"HeadlineText": "{OrderID}",
+				"Subhead": "",
+				"Tags": [],
+				"BodyText": "",
+				"Footnote": "",
+				"Description": "{Subtotal}",
+				"StatusText": "",
+				"StatusImage": "",
+				"SubstatusImage": "",
+				"SubstatusText": ""
+			},
+			"_Type": "Section.Type.ObjectHeader"
+		}, {
+			"KeyAndValues": [
+	{
+		"KeyName": "OrderID",
+		"Value": "{OrderID}"
+	},
+	{
+		"KeyName": "Subtotal",
+		"Value": "{Subtotal}"
+	}
+],
+			"Layout": {
+				"NumberOfColumns": 2
+			},
+			"MaxItemCount": 1,
+			"_Name": "SectionKeyValue0",
+			"_Type": "Section.Type.KeyValue"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Order_Subtotals_Detail"
+}

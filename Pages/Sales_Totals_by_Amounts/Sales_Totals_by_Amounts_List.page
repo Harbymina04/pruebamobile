@@ -1,0 +1,50 @@
+{
+	"Caption": "Sales_Totals_by_Amounts",
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/Sales_Totals_by_Amounts/NavToSales_Totals_by_Amounts_Create.action",
+			"Position": "right",
+			"SystemItem": "Add"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Header": {
+
+				"UseTopPadding": false
+			},
+			"ObjectCell": {
+				"AccessoryType": "disclosureIndicator",
+				"Description": "{OrderID}",
+				"DetailImage": "",
+				"DetailImageIsCircular": false,
+				"Icons": [],
+				"OnPress": "/prueba/Actions/Sales_Totals_by_Amounts/NavToSales_Totals_by_Amounts_Detail.action",
+				"StatusImage": "",
+				"Title": "{SaleAmount}",
+				"Footnote": "{ShippedDate}",
+				"PreserveIconStackSpacing": false,
+				"StatusText": "",
+				"Subhead": "{CompanyName}",
+				"SubstatusText": ""
+			},
+			"Search": {
+				"Enabled": true,
+				"Placeholder": "Item Search",
+				"BarcodeScanner": true,
+				"Delay": 500,
+				"MinimumCharacterThreshold": 3
+			},
+			"Target": {
+				"EntitySet": "Sales_Totals_by_Amounts",
+				"Service": "/prueba/Services/prueba.service",
+				"QueryOptions": ""
+			},
+			"_Type": "Section.Type.ObjectTable"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Sales_Totals_by_Amounts_List"
+}

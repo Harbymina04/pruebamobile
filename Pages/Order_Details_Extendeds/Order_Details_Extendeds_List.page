@@ -1,0 +1,50 @@
+{
+	"Caption": "Order_Details_Extendeds",
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/Order_Details_Extendeds/NavToOrder_Details_Extendeds_Create.action",
+			"Position": "right",
+			"SystemItem": "Add"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Header": {
+
+				"UseTopPadding": false
+			},
+			"ObjectCell": {
+				"AccessoryType": "disclosureIndicator",
+				"Description": "{ProductID}",
+				"DetailImage": "",
+				"DetailImageIsCircular": false,
+				"Icons": [],
+				"OnPress": "/prueba/Actions/Order_Details_Extendeds/NavToOrder_Details_Extendeds_Detail.action",
+				"StatusImage": "",
+				"Title": "{OrderID}",
+				"Footnote": "{UnitPrice}",
+				"PreserveIconStackSpacing": false,
+				"StatusText": "{Quantity}",
+				"Subhead": "{ProductName}",
+				"SubstatusText": "{Discount}"
+			},
+			"Search": {
+				"Enabled": true,
+				"Placeholder": "Item Search",
+				"BarcodeScanner": true,
+				"Delay": 500,
+				"MinimumCharacterThreshold": 3
+			},
+			"Target": {
+				"EntitySet": "Order_Details_Extendeds",
+				"Service": "/prueba/Services/prueba.service",
+				"QueryOptions": ""
+			},
+			"_Type": "Section.Type.ObjectTable"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Order_Details_Extendeds_List"
+}

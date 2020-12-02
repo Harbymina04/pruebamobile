@@ -1,0 +1,91 @@
+{
+	"Caption": "Update Alphabetical_list_of_product",
+	"ActionBar": {
+		"Items": [{
+			"Position": "left",
+			"SystemItem": "Cancel",
+			"OnPress": "/prueba/Actions/CloseModalPage_Cancel.action"
+		}, {
+			"Position": "right",
+			"SystemItem": "Save",
+			"OnPress": "/prueba/Actions/Alphabetical_list_of_products/Alphabetical_list_of_products_UpdateEntity.action"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Caption": "",
+			"Controls": [
+	{
+		"Caption": "ProductID",
+		"_Name": "ProductID",
+		"Value": "{ProductID}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ProductName",
+		"_Name": "ProductName",
+		"Value": "{ProductName}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "SupplierID",
+		"_Name": "SupplierID",
+		"Value": "{SupplierID}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "CategoryID",
+		"_Name": "CategoryID",
+		"Value": "{CategoryID}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "QuantityPerUnit",
+		"_Name": "QuantityPerUnit",
+		"Value": "{QuantityPerUnit}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "UnitPrice",
+		"_Name": "UnitPrice",
+		"Value": "{UnitPrice}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "UnitsInStock",
+		"_Name": "UnitsInStock",
+		"Value": "{UnitsInStock}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "UnitsOnOrder",
+		"_Name": "UnitsOnOrder",
+		"Value": "{UnitsOnOrder}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ReorderLevel",
+		"_Name": "ReorderLevel",
+		"Value": "{ReorderLevel}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"_Name": "Discontinued",
+		"Caption": "Discontinued",
+		"Value": "{Discontinued}",
+		"_Type": "Control.Type.FormCell.Switch"
+	},
+	{
+		"Caption": "CategoryName",
+		"_Name": "CategoryName",
+		"Value": "{CategoryName}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	}
+]
+		}],
+		"_Name": "PageOneFormCell",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "Alphabetical_list_of_products_Edit"
+}

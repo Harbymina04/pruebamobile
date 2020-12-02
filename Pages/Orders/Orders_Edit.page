@@ -1,0 +1,112 @@
+{
+	"Caption": "Update Order",
+	"ActionBar": {
+		"Items": [{
+			"Position": "left",
+			"SystemItem": "Cancel",
+			"OnPress": "/prueba/Actions/CloseModalPage_Cancel.action"
+		}, {
+			"Position": "right",
+			"SystemItem": "Save",
+			"OnPress": "/prueba/Actions/Orders/Orders_UpdateEntity.action"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Caption": "",
+			"Controls": [
+	{
+		"Caption": "OrderID",
+		"_Name": "OrderID",
+		"Value": "{OrderID}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "CustomerID",
+		"_Name": "CustomerID",
+		"Value": "{CustomerID}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "EmployeeID",
+		"_Name": "EmployeeID",
+		"Value": "{EmployeeID}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Mode": "Date",
+		"_Name": "OrderDate",
+		"Value": "{OrderDate}",
+		"Caption": "OrderDate",
+		"_Type": "Control.Type.FormCell.DatePicker"
+	},
+	{
+		"Mode": "Date",
+		"_Name": "RequiredDate",
+		"Value": "{RequiredDate}",
+		"Caption": "RequiredDate",
+		"_Type": "Control.Type.FormCell.DatePicker"
+	},
+	{
+		"Mode": "Date",
+		"_Name": "ShippedDate",
+		"Value": "{ShippedDate}",
+		"Caption": "ShippedDate",
+		"_Type": "Control.Type.FormCell.DatePicker"
+	},
+	{
+		"Caption": "ShipVia",
+		"_Name": "ShipVia",
+		"Value": "{ShipVia}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "Freight",
+		"_Name": "Freight",
+		"Value": "{Freight}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ShipName",
+		"_Name": "ShipName",
+		"Value": "{ShipName}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ShipAddress",
+		"_Name": "ShipAddress",
+		"Value": "{ShipAddress}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ShipCity",
+		"_Name": "ShipCity",
+		"Value": "{ShipCity}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ShipRegion",
+		"_Name": "ShipRegion",
+		"Value": "{ShipRegion}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ShipPostalCode",
+		"_Name": "ShipPostalCode",
+		"Value": "{ShipPostalCode}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	},
+	{
+		"Caption": "ShipCountry",
+		"_Name": "ShipCountry",
+		"Value": "{ShipCountry}",
+		"_Type": "Control.Type.FormCell.SimpleProperty"
+	}
+]
+		}],
+		"_Name": "PageOneFormCell",
+		"_Type": "Control.Type.FormCellContainer"
+	}],
+	"_Type": "Page",
+	"_Name": "Orders_Edit"
+}

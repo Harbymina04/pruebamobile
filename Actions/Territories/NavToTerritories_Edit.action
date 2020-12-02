@@ -1,0 +1,6 @@
+{
+	"ModalPageFullscreen": false,
+	"ModalPage": true,
+	"PageToOpen": "/prueba/Pages/Territories/Territories_Edit.page",
+	"_Type": "Action.Type.Navigation"
+}

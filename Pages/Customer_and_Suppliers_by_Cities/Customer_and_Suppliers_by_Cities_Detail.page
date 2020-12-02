@@ -1,0 +1,62 @@
+{
+	"Caption": "Customer_and_Suppliers_by_Cities Details",
+
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/Customer_and_Suppliers_by_Cities/NavToCustomer_and_Suppliers_by_Cities_Edit.action",
+			"Position": "right",
+			"SystemItem": "Edit"
+		}, {
+			"OnPress": "/prueba/Rules/Customer_and_Suppliers_by_Cities/Customer_and_Suppliers_by_Cities_DeleteConfirmation.js",
+			"Position": "right",
+			"SystemItem": "Trash"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"ObjectHeader": {
+				"DetailImage": "",
+				"HeadlineText": "{City}",
+				"Subhead": "{ContactName}",
+				"Tags": [],
+				"BodyText": "",
+				"Footnote": "{Relationship}",
+				"Description": "{CompanyName}",
+				"StatusText": "",
+				"StatusImage": "",
+				"SubstatusImage": "",
+				"SubstatusText": ""
+			},
+			"_Type": "Section.Type.ObjectHeader"
+		}, {
+			"KeyAndValues": [
+	{
+		"KeyName": "City",
+		"Value": "{City}"
+	},
+	{
+		"KeyName": "CompanyName",
+		"Value": "{CompanyName}"
+	},
+	{
+		"KeyName": "ContactName",
+		"Value": "{ContactName}"
+	},
+	{
+		"KeyName": "Relationship",
+		"Value": "{Relationship}"
+	}
+],
+			"Layout": {
+				"NumberOfColumns": 2
+			},
+			"MaxItemCount": 1,
+			"_Name": "SectionKeyValue0",
+			"_Type": "Section.Type.KeyValue"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Customer_and_Suppliers_by_Cities_Detail"
+}

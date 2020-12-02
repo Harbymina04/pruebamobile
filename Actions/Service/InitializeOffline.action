@@ -1,0 +1,117 @@
+{
+	"Service": "/prueba/Services/prueba.service",
+	"DefiningRequests": [
+	{
+		"Name": "Categories",
+		"Query": "Categories"
+	},
+	{
+		"Name": "CustomerDemographics",
+		"Query": "CustomerDemographics"
+	},
+	{
+		"Name": "Customers",
+		"Query": "Customers"
+	},
+	{
+		"Name": "Employees",
+		"Query": "Employees"
+	},
+	{
+		"Name": "Order_Details",
+		"Query": "Order_Details"
+	},
+	{
+		"Name": "Orders",
+		"Query": "Orders"
+	},
+	{
+		"Name": "Products",
+		"Query": "Products"
+	},
+	{
+		"Name": "Regions",
+		"Query": "Regions"
+	},
+	{
+		"Name": "Shippers",
+		"Query": "Shippers"
+	},
+	{
+		"Name": "Suppliers",
+		"Query": "Suppliers"
+	},
+	{
+		"Name": "Territories",
+		"Query": "Territories"
+	},
+	{
+		"Name": "Alphabetical_list_of_products",
+		"Query": "Alphabetical_list_of_products"
+	},
+	{
+		"Name": "Category_Sales_for_1997",
+		"Query": "Category_Sales_for_1997"
+	},
+	{
+		"Name": "Current_Product_Lists",
+		"Query": "Current_Product_Lists"
+	},
+	{
+		"Name": "Customer_and_Suppliers_by_Cities",
+		"Query": "Customer_and_Suppliers_by_Cities"
+	},
+	{
+		"Name": "Invoices",
+		"Query": "Invoices"
+	},
+	{
+		"Name": "Order_Details_Extendeds",
+		"Query": "Order_Details_Extendeds"
+	},
+	{
+		"Name": "Order_Subtotals",
+		"Query": "Order_Subtotals"
+	},
+	{
+		"Name": "Orders_Qries",
+		"Query": "Orders_Qries"
+	},
+	{
+		"Name": "Product_Sales_for_1997",
+		"Query": "Product_Sales_for_1997"
+	},
+	{
+		"Name": "Products_Above_Average_Prices",
+		"Query": "Products_Above_Average_Prices"
+	},
+	{
+		"Name": "Products_by_Categories",
+		"Query": "Products_by_Categories"
+	},
+	{
+		"Name": "Sales_by_Categories",
+		"Query": "Sales_by_Categories"
+	},
+	{
+		"Name": "Sales_Totals_by_Amounts",
+		"Query": "Sales_Totals_by_Amounts"
+	},
+	{
+		"Name": "Summary_of_Sales_by_Quarters",
+		"Query": "Summary_of_Sales_by_Quarters"
+	},
+	{
+		"Name": "Summary_of_Sales_by_Years",
+		"Query": "Summary_of_Sales_by_Years"
+	}
+],
+	"_Type": "Action.Type.OfflineOData.Initialize",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Downloading...",
+	"ActionResult": {
+		"_Name": "init"
+	},
+	"OnSuccess": "/prueba/Actions/Service/InitializeOfflineSuccessMessage.action",
+	"OnFailure": "/prueba/Actions/Service/InitializeOfflineFailureMessage.action"
+}

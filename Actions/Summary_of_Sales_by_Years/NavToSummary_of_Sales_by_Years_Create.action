@@ -1,0 +1,6 @@
+{
+	"ModalPageFullscreen": false,
+	"ModalPage": true,
+	"PageToOpen": "/prueba/Pages/Summary_of_Sales_by_Years/Summary_of_Sales_by_Years_Create.page",
+	"_Type": "Action.Type.Navigation"
+}

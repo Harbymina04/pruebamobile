@@ -1,0 +1,28 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"Target": {
+		"EntitySet": "Suppliers",
+		"Service": "/prueba/Services/prueba.service",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"Properties":  {
+	"SupplierID": "#Control:SupplierID/#Value",
+	"CompanyName": "#Control:CompanyName/#Value",
+	"ContactName": "#Control:ContactName/#Value",
+	"ContactTitle": "#Control:ContactTitle/#Value",
+	"Address": "#Control:Address/#Value",
+	"City": "#Control:City/#Value",
+	"Region": "#Control:Region/#Value",
+	"PostalCode": "#Control:PostalCode/#Value",
+	"Country": "#Control:Country/#Value",
+	"Phone": "#Control:Phone/#Value",
+	"Fax": "#Control:Fax/#Value",
+	"HomePage": "#Control:HomePage/#Value"
+},
+	"UpdateLinks": [],
+	"ActionResult": {
+		"_Name": "update"
+	},
+	"OnSuccess": "/prueba/Actions/UpdateEntitySuccessMessage.action",
+	"OnFailure": "/prueba/Actions/UpdateEntityFailureMessage.action"
+}

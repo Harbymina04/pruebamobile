@@ -1,0 +1,27 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"Target": {
+		"EntitySet": "Alphabetical_list_of_products",
+		"Service": "/prueba/Services/prueba.service",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"Properties":  {
+	"ProductID": "#Control:ProductID/#Value",
+	"ProductName": "#Control:ProductName/#Value",
+	"SupplierID": "#Control:SupplierID/#Value",
+	"CategoryID": "#Control:CategoryID/#Value",
+	"QuantityPerUnit": "#Control:QuantityPerUnit/#Value",
+	"UnitPrice": "#Control:UnitPrice/#Value",
+	"UnitsInStock": "#Control:UnitsInStock/#Value",
+	"UnitsOnOrder": "#Control:UnitsOnOrder/#Value",
+	"ReorderLevel": "#Control:ReorderLevel/#Value",
+	"Discontinued": "#Control:Discontinued/#Value",
+	"CategoryName": "#Control:CategoryName/#Value"
+},
+	"UpdateLinks": [],
+	"ActionResult": {
+		"_Name": "update"
+	},
+	"OnSuccess": "/prueba/Actions/UpdateEntitySuccessMessage.action",
+	"OnFailure": "/prueba/Actions/UpdateEntityFailureMessage.action"
+}

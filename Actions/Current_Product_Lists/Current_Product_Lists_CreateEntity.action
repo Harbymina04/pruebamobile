@@ -1,0 +1,17 @@
+{
+	"CreateLinks": [],
+	"OnFailure": "/prueba/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/prueba/Actions/CreateEntitySuccessMessage.action",
+	"Properties": {
+	"ProductID": "#Control:ProductID/#Value",
+	"ProductName": "#Control:ProductName/#Value"
+},
+	"Target": {
+		"EntitySet": "Current_Product_Lists",
+		"Service": "/prueba/Services/prueba.service"
+	},
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"_Type": "Action.Type.ODataService.CreateEntity"
+}

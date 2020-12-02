@@ -1,0 +1,17 @@
+{
+	"CreateLinks": [],
+	"OnFailure": "/prueba/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/prueba/Actions/CreateEntitySuccessMessage.action",
+	"Properties": {
+	"RegionID": "#Control:RegionID/#Value",
+	"RegionDescription": "#Control:RegionDescription/#Value"
+},
+	"Target": {
+		"EntitySet": "Regions",
+		"Service": "/prueba/Services/prueba.service"
+	},
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"_Type": "Action.Type.ODataService.CreateEntity"
+}

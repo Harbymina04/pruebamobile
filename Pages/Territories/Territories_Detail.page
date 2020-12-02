@@ -1,0 +1,58 @@
+{
+	"Caption": "Territories Details",
+
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/Territories/NavToTerritories_Edit.action",
+			"Position": "right",
+			"SystemItem": "Edit"
+		}, {
+			"OnPress": "/prueba/Rules/Territories/Territories_DeleteConfirmation.js",
+			"Position": "right",
+			"SystemItem": "Trash"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"ObjectHeader": {
+				"DetailImage": "",
+				"HeadlineText": "{TerritoryID}",
+				"Subhead": "{RegionID}",
+				"Tags": [],
+				"BodyText": "",
+				"Footnote": "",
+				"Description": "{TerritoryDescription}",
+				"StatusText": "",
+				"StatusImage": "",
+				"SubstatusImage": "",
+				"SubstatusText": ""
+			},
+			"_Type": "Section.Type.ObjectHeader"
+		}, {
+			"KeyAndValues": [
+	{
+		"KeyName": "TerritoryID",
+		"Value": "{TerritoryID}"
+	},
+	{
+		"KeyName": "TerritoryDescription",
+		"Value": "{TerritoryDescription}"
+	},
+	{
+		"KeyName": "RegionID",
+		"Value": "{RegionID}"
+	}
+],
+			"Layout": {
+				"NumberOfColumns": 2
+			},
+			"MaxItemCount": 1,
+			"_Name": "SectionKeyValue0",
+			"_Type": "Section.Type.KeyValue"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Territories_Detail"
+}

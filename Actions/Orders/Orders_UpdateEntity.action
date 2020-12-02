@@ -1,0 +1,30 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"Target": {
+		"EntitySet": "Orders",
+		"Service": "/prueba/Services/prueba.service",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"Properties":  {
+	"OrderID": "#Control:OrderID/#Value",
+	"CustomerID": "#Control:CustomerID/#Value",
+	"EmployeeID": "#Control:EmployeeID/#Value",
+	"OrderDate": "#Control:OrderDate/#Value",
+	"RequiredDate": "#Control:RequiredDate/#Value",
+	"ShippedDate": "#Control:ShippedDate/#Value",
+	"ShipVia": "#Control:ShipVia/#Value",
+	"Freight": "#Control:Freight/#Value",
+	"ShipName": "#Control:ShipName/#Value",
+	"ShipAddress": "#Control:ShipAddress/#Value",
+	"ShipCity": "#Control:ShipCity/#Value",
+	"ShipRegion": "#Control:ShipRegion/#Value",
+	"ShipPostalCode": "#Control:ShipPostalCode/#Value",
+	"ShipCountry": "#Control:ShipCountry/#Value"
+},
+	"UpdateLinks": [],
+	"ActionResult": {
+		"_Name": "update"
+	},
+	"OnSuccess": "/prueba/Actions/UpdateEntitySuccessMessage.action",
+	"OnFailure": "/prueba/Actions/UpdateEntityFailureMessage.action"
+}

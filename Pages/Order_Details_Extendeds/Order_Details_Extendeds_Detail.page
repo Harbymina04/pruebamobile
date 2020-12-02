@@ -1,0 +1,74 @@
+{
+	"Caption": "Order_Details_Extendeds Details",
+
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/Order_Details_Extendeds/NavToOrder_Details_Extendeds_Edit.action",
+			"Position": "right",
+			"SystemItem": "Edit"
+		}, {
+			"OnPress": "/prueba/Rules/Order_Details_Extendeds/Order_Details_Extendeds_DeleteConfirmation.js",
+			"Position": "right",
+			"SystemItem": "Trash"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"ObjectHeader": {
+				"DetailImage": "",
+				"HeadlineText": "{OrderID}",
+				"Subhead": "{ProductName}",
+				"Tags": [],
+				"BodyText": "",
+				"Footnote": "{UnitPrice}",
+				"Description": "{ProductID}",
+				"StatusText": "{Quantity}",
+				"StatusImage": "",
+				"SubstatusImage": "",
+				"SubstatusText": "{Discount}"
+			},
+			"_Type": "Section.Type.ObjectHeader"
+		}, {
+			"KeyAndValues": [
+	{
+		"KeyName": "OrderID",
+		"Value": "{OrderID}"
+	},
+	{
+		"KeyName": "ProductID",
+		"Value": "{ProductID}"
+	},
+	{
+		"KeyName": "ProductName",
+		"Value": "{ProductName}"
+	},
+	{
+		"KeyName": "UnitPrice",
+		"Value": "{UnitPrice}"
+	},
+	{
+		"KeyName": "Quantity",
+		"Value": "{Quantity}"
+	},
+	{
+		"KeyName": "Discount",
+		"Value": "{Discount}"
+	},
+	{
+		"KeyName": "ExtendedPrice",
+		"Value": "{ExtendedPrice}"
+	}
+],
+			"Layout": {
+				"NumberOfColumns": 2
+			},
+			"MaxItemCount": 1,
+			"_Name": "SectionKeyValue0",
+			"_Type": "Section.Type.KeyValue"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Order_Details_Extendeds_Detail"
+}

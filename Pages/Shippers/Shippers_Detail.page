@@ -1,0 +1,58 @@
+{
+	"Caption": "Shippers Details",
+
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/Shippers/NavToShippers_Edit.action",
+			"Position": "right",
+			"SystemItem": "Edit"
+		}, {
+			"OnPress": "/prueba/Rules/Shippers/Shippers_DeleteConfirmation.js",
+			"Position": "right",
+			"SystemItem": "Trash"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"ObjectHeader": {
+				"DetailImage": "",
+				"HeadlineText": "{ShipperID}",
+				"Subhead": "{Phone}",
+				"Tags": [],
+				"BodyText": "",
+				"Footnote": "",
+				"Description": "{CompanyName}",
+				"StatusText": "",
+				"StatusImage": "",
+				"SubstatusImage": "",
+				"SubstatusText": ""
+			},
+			"_Type": "Section.Type.ObjectHeader"
+		}, {
+			"KeyAndValues": [
+	{
+		"KeyName": "ShipperID",
+		"Value": "{ShipperID}"
+	},
+	{
+		"KeyName": "CompanyName",
+		"Value": "{CompanyName}"
+	},
+	{
+		"KeyName": "Phone",
+		"Value": "{Phone}"
+	}
+],
+			"Layout": {
+				"NumberOfColumns": 2
+			},
+			"MaxItemCount": 1,
+			"_Name": "SectionKeyValue0",
+			"_Type": "Section.Type.KeyValue"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Shippers_Detail"
+}

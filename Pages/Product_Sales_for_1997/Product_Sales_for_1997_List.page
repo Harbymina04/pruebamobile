@@ -1,0 +1,50 @@
+{
+	"Caption": "Product_Sales_for_1997",
+	"ActionBar": {
+		"Items": [{
+			"OnPress": "/prueba/Actions/Product_Sales_for_1997/NavToProduct_Sales_for_1997_Create.action",
+			"Position": "right",
+			"SystemItem": "Add"
+		}]
+	},
+	"Controls": [{
+		"Sections": [{
+			"Header": {
+
+				"UseTopPadding": false
+			},
+			"ObjectCell": {
+				"AccessoryType": "disclosureIndicator",
+				"Description": "{ProductName}",
+				"DetailImage": "",
+				"DetailImageIsCircular": false,
+				"Icons": [],
+				"OnPress": "/prueba/Actions/Product_Sales_for_1997/NavToProduct_Sales_for_1997_Detail.action",
+				"StatusImage": "",
+				"Title": "{CategoryName}",
+				"Footnote": "",
+				"PreserveIconStackSpacing": false,
+				"StatusText": "",
+				"Subhead": "{ProductSales}",
+				"SubstatusText": ""
+			},
+			"Search": {
+				"Enabled": true,
+				"Placeholder": "Item Search",
+				"BarcodeScanner": true,
+				"Delay": 500,
+				"MinimumCharacterThreshold": 3
+			},
+			"Target": {
+				"EntitySet": "Product_Sales_for_1997",
+				"Service": "/prueba/Services/prueba.service",
+				"QueryOptions": ""
+			},
+			"_Type": "Section.Type.ObjectTable"
+		}],
+		"_Type": "Control.Type.SectionedTable",
+		"_Name": "SectionedTable"
+	}],
+	"_Type": "Page",
+	"_Name": "Product_Sales_for_1997_List"
+}

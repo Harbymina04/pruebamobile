@@ -1,0 +1,27 @@
+{
+	"CreateLinks": [],
+	"OnFailure": "/prueba/Actions/CreateEntityFailureMessage.action",
+	"OnSuccess": "/prueba/Actions/CreateEntitySuccessMessage.action",
+	"Properties": {
+	"SupplierID": "#Control:SupplierID/#Value",
+	"CompanyName": "#Control:CompanyName/#Value",
+	"ContactName": "#Control:ContactName/#Value",
+	"ContactTitle": "#Control:ContactTitle/#Value",
+	"Address": "#Control:Address/#Value",
+	"City": "#Control:City/#Value",
+	"Region": "#Control:Region/#Value",
+	"PostalCode": "#Control:PostalCode/#Value",
+	"Country": "#Control:Country/#Value",
+	"Phone": "#Control:Phone/#Value",
+	"Fax": "#Control:Fax/#Value",
+	"HomePage": "#Control:HomePage/#Value"
+},
+	"Target": {
+		"EntitySet": "Suppliers",
+		"Service": "/prueba/Services/prueba.service"
+	},
+	"ActionResult": {
+		"_Name": "create"
+	},
+	"_Type": "Action.Type.ODataService.CreateEntity"
+}

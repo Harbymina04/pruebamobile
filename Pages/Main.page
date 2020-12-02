@@ -1,0 +1,158 @@
+{
+	"Caption": "Main",
+	"Controls": [{
+		"_Name": "SectionedTable0",
+		"_Type": "Control.Type.SectionedTable",
+		"Sections": [{
+			"Buttons": [
+	{
+		"OnPress": "/prueba/Actions/Categories/NavToCategories_List.action",
+		"TextAlignment": "center",
+		"Title": "Categories"
+	},
+	{
+		"OnPress": "/prueba/Actions/CustomerDemographics/NavToCustomerDemographics_List.action",
+		"TextAlignment": "center",
+		"Title": "CustomerDemographics"
+	},
+	{
+		"OnPress": "/prueba/Actions/Customers/NavToCustomers_List.action",
+		"TextAlignment": "center",
+		"Title": "Customers"
+	},
+	{
+		"OnPress": "/prueba/Actions/Employees/NavToEmployees_List.action",
+		"TextAlignment": "center",
+		"Title": "Employees"
+	},
+	{
+		"OnPress": "/prueba/Actions/Order_Details/NavToOrder_Details_List.action",
+		"TextAlignment": "center",
+		"Title": "Order_Details"
+	},
+	{
+		"OnPress": "/prueba/Actions/Orders/NavToOrders_List.action",
+		"TextAlignment": "center",
+		"Title": "Orders"
+	},
+	{
+		"OnPress": "/prueba/Actions/Products/NavToProducts_List.action",
+		"TextAlignment": "center",
+		"Title": "Products"
+	},
+	{
+		"OnPress": "/prueba/Actions/Regions/NavToRegions_List.action",
+		"TextAlignment": "center",
+		"Title": "Regions"
+	},
+	{
+		"OnPress": "/prueba/Actions/Shippers/NavToShippers_List.action",
+		"TextAlignment": "center",
+		"Title": "Shippers"
+	},
+	{
+		"OnPress": "/prueba/Actions/Suppliers/NavToSuppliers_List.action",
+		"TextAlignment": "center",
+		"Title": "Suppliers"
+	},
+	{
+		"OnPress": "/prueba/Actions/Territories/NavToTerritories_List.action",
+		"TextAlignment": "center",
+		"Title": "Territories"
+	},
+	{
+		"OnPress": "/prueba/Actions/Alphabetical_list_of_products/NavToAlphabetical_list_of_products_List.action",
+		"TextAlignment": "center",
+		"Title": "Alphabetical_list_of_products"
+	},
+	{
+		"OnPress": "/prueba/Actions/Category_Sales_for_1997/NavToCategory_Sales_for_1997_List.action",
+		"TextAlignment": "center",
+		"Title": "Category_Sales_for_1997"
+	},
+	{
+		"OnPress": "/prueba/Actions/Current_Product_Lists/NavToCurrent_Product_Lists_List.action",
+		"TextAlignment": "center",
+		"Title": "Current_Product_Lists"
+	},
+	{
+		"OnPress": "/prueba/Actions/Customer_and_Suppliers_by_Cities/NavToCustomer_and_Suppliers_by_Cities_List.action",
+		"TextAlignment": "center",
+		"Title": "Customer_and_Suppliers_by_Cities"
+	},
+	{
+		"OnPress": "/prueba/Actions/Invoices/NavToInvoices_List.action",
+		"TextAlignment": "center",
+		"Title": "Invoices"
+	},
+	{
+		"OnPress": "/prueba/Actions/Order_Details_Extendeds/NavToOrder_Details_Extendeds_List.action",
+		"TextAlignment": "center",
+		"Title": "Order_Details_Extendeds"
+	},
+	{
+		"OnPress": "/prueba/Actions/Order_Subtotals/NavToOrder_Subtotals_List.action",
+		"TextAlignment": "center",
+		"Title": "Order_Subtotals"
+	},
+	{
+		"OnPress": "/prueba/Actions/Orders_Qries/NavToOrders_Qries_List.action",
+		"TextAlignment": "center",
+		"Title": "Orders_Qries"
+	},
+	{
+		"OnPress": "/prueba/Actions/Product_Sales_for_1997/NavToProduct_Sales_for_1997_List.action",
+		"TextAlignment": "center",
+		"Title": "Product_Sales_for_1997"
+	},
+	{
+		"OnPress": "/prueba/Actions/Products_Above_Average_Prices/NavToProducts_Above_Average_Prices_List.action",
+		"TextAlignment": "center",
+		"Title": "Products_Above_Average_Prices"
+	},
+	{
+		"OnPress": "/prueba/Actions/Products_by_Categories/NavToProducts_by_Categories_List.action",
+		"TextAlignment": "center",
+		"Title": "Products_by_Categories"
+	},
+	{
+		"OnPress": "/prueba/Actions/Sales_by_Categories/NavToSales_by_Categories_List.action",
+		"TextAlignment": "center",
+		"Title": "Sales_by_Categories"
+	},
+	{
+		"OnPress": "/prueba/Actions/Sales_Totals_by_Amounts/NavToSales_Totals_by_Amounts_List.action",
+		"TextAlignment": "center",
+		"Title": "Sales_Totals_by_Amounts"
+	},
+	{
+		"OnPress": "/prueba/Actions/Summary_of_Sales_by_Quarters/NavToSummary_of_Sales_by_Quarters_List.action",
+		"TextAlignment": "center",
+		"Title": "Summary_of_Sales_by_Quarters"
+	},
+	{
+		"OnPress": "/prueba/Actions/Summary_of_Sales_by_Years/NavToSummary_of_Sales_by_Years_List.action",
+		"TextAlignment": "center",
+		"Title": "Summary_of_Sales_by_Years"
+	}
+],
+			"_Name": "SectionButtonTable0",
+			"_Type": "Section.Type.ButtonTable"
+		}]
+	}],
+	"_Name": "Main",
+	"_Type": "Page",
+	"ToolBar": {
+		"Controls": [{
+			"_Name": "LogoutToolbarItem",
+			"_Type": "Control.Type.ToolbarItem",
+			"Caption": "Logout",
+			"OnPress": "/prueba/Actions/Logout.action"
+		}, {
+			"_Name": "UploadToolbarItem",
+			"_Type": "Control.Type.ToolbarItem",
+			"Caption": "Sync",
+			"OnPress": "/prueba/Actions/Service/SyncStartedMessage.action"
+		}]
+	}
+}
